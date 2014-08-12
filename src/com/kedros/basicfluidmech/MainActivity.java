@@ -1,76 +1,62 @@
 package com.kedros.basicfluidmech;
 
-import android.support.v7.app.ActionBarActivity;
-import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentTransaction;
+import android.support.v4.widget.DrawerLayout;
 import android.view.Menu;
 import android.view.MenuInflater;
-import android.view.MenuItem;
-import android.widget.Toast;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
+public class MainActivity extends FragmentActivity {
+	final String[] data ={"One","Two","Three"};
+	final String[] fragments ={
+			"com.kedros.basicfluidmech.FragmentOne",
+			"com.kedros.basicfluidmech.FragmentTwo",
+			"com.kedros.basicfluidmech.FragmentThree"};
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		 super.onCreate(savedInstanceState);
+		 setContentView(R.layout.activity_main);
+		
+		 ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActionBar().getThemedContext(), android.R.layout.simple_list_item_1, data);
 
-public class MainActivity extends ActionBarActivity {
+		 final DrawerLayout drawer = (DrawerLayout)findViewById(R.id.drawer_layout);
+		 final ListView navList = (ListView) findViewById(R.id.drawer);
+		 navList.setAdapter(adapter);
+		 navList.setOnItemClickListener(new OnItemClickListener(){
+		         @Override
+		         public void onItemClick(AdapterView<?> parent, View view, final int pos,long id){
+		                 drawer.setDrawerListener( new DrawerLayout.SimpleDrawerListener(){
+		                         @Override
+		                         public void onDrawerClosed(View drawerView){
+		                                 super.onDrawerClosed(drawerView);
+		                                 FragmentTransaction tx = getSupportFragmentManager().beginTransaction();
+		                                 tx.replace(R.id.main, Fragment.instantiate(MainActivity.this, fragments[pos]));
+		                                 tx.commit();
+		                         }
+		                 });
+		                 drawer.closeDrawer(navList);
+		         }
+		 });
+		 FragmentTransaction tx = getSupportFragmentManager().beginTransaction();
+		 tx.replace(R.id.main,Fragment.instantiate(MainActivity.this, fragments[0]));
+		 tx.commit();
+	}
+	 @Override
+	    public boolean onCreateOptionsMenu(Menu menu) {
+	        // Inflate the menu; this adds items to the action bar if it is present.
+	        getMenuInflater().inflate(R.menu.main, menu);
+	    	MenuInflater inflater = getMenuInflater();
+	        inflater.inflate(R.menu.action_icon, menu); 
+	        return true;
+	    }
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        //if want to hide the NAV bar when open app , use the following code
-        //========
-        //getWindow().
-        //getDecorView().
-        //setSystemUiVisibility(View.SYSTEM_UI_FLAG_HIDE_NAVIGATION);
-        //========
-        
-    }
+	
 
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main, menu);
-    	MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.action_icon, menu); 
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        //int id = item.getItemId();
-        //if (id == R.id.action_settings) {
-        //     return true;
-        // }
-        // return super.onOptionsItemSelected(item);
-    	android.app.ActionBar actionBar = getActionBar();
-    	switch (item.getItemId()) {
-    	case R.id.action_refresh:
-    		actionBar.setTitle("Refresh");
-    		Toast.makeText(this, "Refresh Selected", Toast.LENGTH_SHORT)
-    		.show();
-    		break;
-    	case R.id.action_help:
-    		actionBar.setTitle("Help");
-    		//setContentView(R.layout.activity_help);
-    		//intent start a new activity
-    		startActivity(new Intent(MainActivity.this, Help.class));
-    		Toast.makeText(this, "Help Selected", Toast.LENGTH_SHORT)
-    		.show();
-    		
-    		break;
-    	case R.id.action_settings:
-    		actionBar.setTitle("Settings");
-    		Toast.makeText(this, "Settings Selected", Toast.LENGTH_SHORT)
-    		.show();
-    		break;
-    	
-    	default:
-    	break;
-    		
-    	}
-    	return true;
-    	
-    }
 }
