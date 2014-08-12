@@ -10,5 +10,6 @@
     <string name="title_activity_splash_screen">SplashScreen</string>
     <string name="about">Here is the about!</string>
     <color name="white">#FFFFFF</color>
+    <string name="scrolldown">Here you can see me when you scroll down!</string>
 
 </resources>

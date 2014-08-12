@@ -51,6 +51,7 @@ public class MainActivity extends ActionBarActivity {
     	case R.id.action_help:
     		actionBar.setTitle("Help");
     		//setContentView(R.layout.activity_help);
+    		//intent start a new activity
     		startActivity(new Intent(MainActivity.this, Help.class));
     		Toast.makeText(this, "Help Selected", Toast.LENGTH_SHORT)
     		.show();
