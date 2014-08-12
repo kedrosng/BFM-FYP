@@ -2,9 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.kedros.basicfluidmech"
     android:versionCode="1"
-    android:versionName="20140812a" >
+    android:versionName="20140812b" >
     <uses-sdk
-        android:minSdkVersion="14"
+        android:minSdkVersion="16"
         android:targetSdkVersion="21" />
 
     <application
@@ -19,7 +19,15 @@
         </activity>
         <activity
             android:name=".Help"
-            android:label="@string/title_activity_help" >
+            android:label="@string/title_activity_help"
+            android:parentActivityName="com.kedros.basicfluidmech.MainActivity">
+            <intent-filter >
+                <action android:name="com.kedros.basicfluidmech.Help"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data 
+                   android:name="android.support.PARENT_ACTIVITY"
+                   android:value="come.kedros.basicfluidmech.MainActivity"/>
         </activity>
         <activity
             android:name=".SplashScreen"

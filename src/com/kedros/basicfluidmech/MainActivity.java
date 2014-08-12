@@ -1,6 +1,7 @@
 package com.kedros.basicfluidmech;
 
 import android.support.v7.app.ActionBarActivity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -48,8 +49,9 @@ public class MainActivity extends ActionBarActivity {
     		.show();
     		break;
     	case R.id.action_help:
-    		setContentView(R.layout.activity_help);
     		actionBar.setTitle("Help");
+    		//setContentView(R.layout.activity_help);
+    		startActivity(new Intent(MainActivity.this, Help.class));
     		Toast.makeText(this, "Help Selected", Toast.LENGTH_SHORT)
     		.show();
     		
