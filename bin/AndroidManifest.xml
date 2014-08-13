@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.kedros.basicfluidmech"
     android:versionCode="1"
-    android:versionName="20140813a" >
+    android:versionName="20140814" >
     <uses-sdk
         android:minSdkVersion="16"
         android:targetSdkVersion="21" />

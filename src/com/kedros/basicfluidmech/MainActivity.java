@@ -1,5 +1,6 @@
 package com.kedros.basicfluidmech;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
@@ -7,18 +8,28 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v4.widget.DrawerLayout;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 public class MainActivity extends FragmentActivity {
-	final String[] data ={"One","Two","Three"};
+	final String[] data ={
+			"About",
+			"Basic Knowledge",
+			"Type of Flow",
+			"Impact Force"
+			
+			};
 	final String[] fragments ={
-			"com.kedros.basicfluidmech.FragmentOne",
+			"com.kedros.basicfluidmech.About",
 			"com.kedros.basicfluidmech.FragmentTwo",
-			"com.kedros.basicfluidmech.FragmentThree"};
+			"com.kedros.basicfluidmech.FragmentThree",
+			"com.kedros.basicfluidmech.FragmentFour"
+			};
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		 super.onCreate(savedInstanceState);
@@ -56,6 +67,28 @@ public class MainActivity extends FragmentActivity {
 	        inflater.inflate(R.menu.action_icon, menu); 
 	        return true;
 	    }
+	 
+	 @Override
+	  public boolean onOptionsItemSelected(MenuItem item) {
+	    switch (item.getItemId()) {
+	    // action with ID action_refresh was selected
+	    case R.id.action_search:
+	      Toast.makeText(this, "Search selected", Toast.LENGTH_SHORT)
+	          .show();
+	      break;
+	    case R.id.action_exit:
+	    	Intent startMain = new Intent(Intent.ACTION_MAIN);
+	        startMain.addCategory(Intent.CATEGORY_HOME);
+	        startMain.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+	        startActivity(startMain);
+	      break;
+	      
+	    default:
+	      break;
+	    }
+
+	    return true;
+	  } 
 
 	
 

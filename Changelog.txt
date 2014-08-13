@@ -1,2 +1,6 @@
 20140812c - Added ScrollView and Modify the text for testing
 20140813a - Transform to Navigation Drawer
+20140814  - Rename Menu
+			Add Exit Button
+			Rename Activity
+			Modify Search Button (Added Toast)
