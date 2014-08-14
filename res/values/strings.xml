@@ -8,7 +8,7 @@
     <string name="action_exit">Exit</string>
     <string name="title_activity_help">Help</string>
     <string name="title_activity_splash_screen">SplashScreen</string>
-    <string name="about">Here is the about!</string>
+    <string name="about">Welcome to the Basic Fluid Mechanics!</string>
     <string name="action_search">Search</string>
     <color name="white">#FFFFFF</color>
     <string name="scrolldown">Here you can see me when you scroll down!</string>

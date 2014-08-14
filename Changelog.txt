@@ -4,3 +4,4 @@
 			Add Exit Button
 			Rename Activity
 			Modify Search Button (Added Toast)
+20140815  - Remove Menu and add all back to the navigation drawer (Thanks to Rumos Mok)

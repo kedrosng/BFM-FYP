@@ -21,14 +21,16 @@ public class MainActivity extends FragmentActivity {
 			"About",
 			"Basic Knowledge",
 			"Type of Flow",
-			"Impact Force"
+			"Impact Force",
+			"Help"
 			
 			};
 	final String[] fragments ={
 			"com.kedros.basicfluidmech.About",
 			"com.kedros.basicfluidmech.FragmentTwo",
 			"com.kedros.basicfluidmech.FragmentThree",
-			"com.kedros.basicfluidmech.FragmentFour"
+			"com.kedros.basicfluidmech.FragmentFour",
+			"com.kedros.basicfluidmech.Help"
 			};
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -62,7 +64,7 @@ public class MainActivity extends FragmentActivity {
 	 @Override
 	    public boolean onCreateOptionsMenu(Menu menu) {
 	        // Inflate the menu; this adds items to the action bar if it is present.
-	        getMenuInflater().inflate(R.menu.main, menu);
+	        //getMenuInflater().inflate(R.menu.main, menu);
 	    	MenuInflater inflater = getMenuInflater();
 	        inflater.inflate(R.menu.action_icon, menu); 
 	        return true;
@@ -76,12 +78,12 @@ public class MainActivity extends FragmentActivity {
 	      Toast.makeText(this, "Search selected", Toast.LENGTH_SHORT)
 	          .show();
 	      break;
-	    case R.id.action_exit:
-	    	Intent startMain = new Intent(Intent.ACTION_MAIN);
-	        startMain.addCategory(Intent.CATEGORY_HOME);
-	        startMain.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-	        startActivity(startMain);
-	      break;
+	    //case R.id.action_exit:
+	    	//Intent startMain = new Intent(Intent.ACTION_MAIN);
+	        //startMain.addCategory(Intent.CATEGORY_HOME);
+	        //startMain.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+	        //startActivity(startMain);
+	     // break;
 	      
 	    default:
 	      break;
