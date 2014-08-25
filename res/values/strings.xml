@@ -12,5 +12,8 @@
     <string name="action_search">Search</string>
     <color name="white">#FFFFFF</color>
     <string name="scrolldown">Here you can see me when you scroll down!</string>
+    <string name="drawer_open">Drawer Opened</string>
+    <string name="drawer_closed">Drawer Closed</string>
+    
 
 </resources>

@@ -367,6 +367,8 @@ int string action_help 0x7f0a0010
 int string action_search 0x7f0a0015
 int string action_settings 0x7f0a000f
 int string app_name 0x7f0a000d
+int string drawer_closed 0x7f0a0018
+int string drawer_open 0x7f0a0017
 int string hello_world 0x7f0a000e
 int string scrolldown 0x7f0a0016
 int string title_activity_help 0x7f0a0012

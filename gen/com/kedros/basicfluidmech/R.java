@@ -1269,6 +1269,8 @@ containing a value of this type.
         public static final int action_search=0x7f0a0015;
         public static final int action_settings=0x7f0a000f;
         public static final int app_name=0x7f0a000d;
+        public static final int drawer_closed=0x7f0a0018;
+        public static final int drawer_open=0x7f0a0017;
         public static final int hello_world=0x7f0a000e;
         public static final int scrolldown=0x7f0a0016;
         public static final int title_activity_help=0x7f0a0012;
