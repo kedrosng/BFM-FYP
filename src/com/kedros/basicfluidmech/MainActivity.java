@@ -1,6 +1,7 @@
 package com.kedros.basicfluidmech;
 
 import android.os.Bundle;
+import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTransaction;
@@ -16,6 +17,9 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 public class MainActivity extends FragmentActivity {
+	
+	ActionBarDrawerToggle mDrawerToggle;
+	
 	final String[] data ={
 			"About",
 			"Basic Knowledge",
@@ -39,6 +43,23 @@ public class MainActivity extends FragmentActivity {
 		 ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActionBar().getThemedContext(), android.R.layout.simple_list_item_1, data);
 
 		 final DrawerLayout drawer = (DrawerLayout)findViewById(R.id.drawer_layout);
+		 
+	     mDrawerToggle = new ActionBarDrawerToggle(this, drawer,
+	                R.drawable.unnamed, R.drawable.unnamed, R.drawable.unnamed) {
+
+	            /** Called when a drawer has settled in a completely closed state. */
+	            public void onDrawerClosed(View view) {
+	                super.onDrawerClosed(view);
+	                invalidateOptionsMenu(); // creates call to onPrepareOptionsMenu()
+	            }
+
+	            /** Called when a drawer has settled in a completely open state. */
+	            public void onDrawerOpened(View drawerView) {
+	                super.onDrawerOpened(drawerView);
+	                invalidateOptionsMenu(); // creates call to onPrepareOptionsMenu()
+	            }
+	        };
+		 
 		 final ListView navList = (ListView) findViewById(R.id.drawer);
 		 navList.setAdapter(adapter);
 		 navList.setOnItemClickListener(new OnItemClickListener(){
@@ -59,6 +80,12 @@ public class MainActivity extends FragmentActivity {
 		 FragmentTransaction tx = getSupportFragmentManager().beginTransaction();
 		 tx.replace(R.id.main,Fragment.instantiate(MainActivity.this, fragments[0]));
 		 tx.commit();
+		 
+	        // Set the drawer toggle as the DrawerListener
+	        drawer.setDrawerListener(mDrawerToggle);
+
+	        getActionBar().setDisplayHomeAsUpEnabled(true);
+	        getActionBar().setHomeButtonEnabled(true);
 	}
 	 @Override
 	    public boolean onCreateOptionsMenu(Menu menu) {
@@ -71,6 +98,11 @@ public class MainActivity extends FragmentActivity {
 	 
 	 @Override
 	  public boolean onOptionsItemSelected(MenuItem item) {
+
+	    if (mDrawerToggle.onOptionsItemSelected(item)) {
+	         return true;
+	    }
+		 
 	    switch (item.getItemId()) {
 	    // action with ID action_refresh was selected
 	    case R.id.action_search:
@@ -88,7 +120,7 @@ public class MainActivity extends FragmentActivity {
 	      break;
 	    }
 
-	    return true;
+	    return super.onOptionsItemSelected(item);
 	  } 
 
 	

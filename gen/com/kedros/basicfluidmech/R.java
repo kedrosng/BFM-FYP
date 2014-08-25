@@ -1081,8 +1081,9 @@ containing a value of this type.
         public static final int bg=0x7f020057;
         public static final int fluid_splash=0x7f020058;
         public static final int ic_action_search=0x7f020059;
-        public static final int ic_launcher=0x7f02005a;
-        public static final int unnamed=0x7f02005b;
+        public static final int ic_drawer=0x7f02005a;
+        public static final int ic_launcher=0x7f02005b;
+        public static final int unnamed=0x7f02005c;
     }
     public static final class id {
         public static final int ScrollView01=0x7f05003d;
