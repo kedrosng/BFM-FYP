@@ -18,10 +18,10 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 public class MainActivity extends FragmentActivity {
-	private DrawerLayout mDrawerLayout;
-    private ActionBarDrawerToggle mDrawerToggle;
-    
-    final String[] data ={
+	
+	ActionBarDrawerToggle mDrawerToggle;
+	
+	String[] data ={
 			"About",
 			"Basic Knowledge",
 			"Type of Flow",
@@ -29,7 +29,7 @@ public class MainActivity extends FragmentActivity {
 			"Help"
 			
 			};
-	final String[] fragments ={
+	String[] fragments ={
 			"com.kedros.basicfluidmech.About",
 			"com.kedros.basicfluidmech.FragmentTwo",
 			"com.kedros.basicfluidmech.FragmentThree",
@@ -37,66 +37,69 @@ public class MainActivity extends FragmentActivity {
 			"com.kedros.basicfluidmech.Help"
 			};
 	@Override
-	protected void onCreate(Bundle savedInstanceState) {
+	public void onCreate(Bundle savedInstanceState) {
 		 super.onCreate(savedInstanceState);
 		 setContentView(R.layout.activity_main);
 		
 		 ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActionBar().getThemedContext(), android.R.layout.simple_list_item_1, data);
-		 mDrawerLayout = (DrawerLayout)findViewById(R.id.drawer_layout);
-	        
-		 //final DrawerLayout drawer = (DrawerLayout)findViewById(R.id.drawer_layout);
-		 // Set the drawer toggle as the DrawerListener
-	        mDrawerLayout.setDrawerListener(mDrawerToggle);
 
-	        getActionBar().setDisplayHomeAsUpEnabled(true);
-	        getActionBar().setHomeButtonEnabled(true); 
-	      
-	        mDrawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout ,
+		 final DrawerLayout drawer = (DrawerLayout)findViewById(R.id.drawer_layout);
+		 
+	     mDrawerToggle = new ActionBarDrawerToggle(this, drawer,
 	                R.drawable.ic_drawer, R.string.drawer_open, R.string.drawer_closed) {
 
-	    	 
 	            /** Called when a drawer has settled in a completely closed state. */
 	            public void onDrawerClosed(View view) {
 	                super.onDrawerClosed(view);
-	                invalidateOptionsMenu(); // creates call to onPrepareOptionsMenu()
+	                /*
+	                 * the invalidateOptionsMenu function you only need when you want to change the Menu later
+	                 * if i understand it in the right way you won't do this
+	                 */
+	                //invalidateOptionsMenu(); // creates call to onPrepareOptionsMenu()
 	            }
 
 	            /** Called when a drawer has settled in a completely open state. */
 	            public void onDrawerOpened(View drawerView) {
 	                super.onDrawerOpened(drawerView);
-	                invalidateOptionsMenu(); // creates call to onPrepareOptionsMenu()
+	                /*
+	                 * the invalidateOptionsMenu function you only need when you want to change the Menu later
+	                 * if i understand it in the right way you won't do this
+	                 */
+	                //invalidateOptionsMenu(); // creates call to onPrepareOptionsMenu()
 	            }
-	           
 	        };
-	        
 		 
 		 final ListView navList = (ListView) findViewById(R.id.drawer);
 		 navList.setAdapter(adapter);
 		 navList.setOnItemClickListener(new OnItemClickListener(){
 		         @Override
 		         public void onItemClick(AdapterView<?> parent, View view, final int pos,long id){
-		                 mDrawerLayout.setDrawerListener( new DrawerLayout.SimpleDrawerListener(){
+		                 drawer.setDrawerListener( new DrawerLayout.SimpleDrawerListener(){
 		                         @Override
 		                         public void onDrawerClosed(View drawerView){
 		                                 super.onDrawerClosed(drawerView);
-		                                 getActionBar().setTitle(data[pos]);
 		                                 FragmentTransaction tx = getSupportFragmentManager().beginTransaction();
 		                                 tx.replace(R.id.main, Fragment.instantiate(MainActivity.this, fragments[pos]));
 		                                 tx.commit();
 		                         }
 		                 });
-		                 mDrawerLayout.closeDrawer(navList);
+		                 drawer.closeDrawer(navList);
 		         }
 		 });
-		 
 		 FragmentTransaction tx = getSupportFragmentManager().beginTransaction();
 		 tx.replace(R.id.main,Fragment.instantiate(MainActivity.this, fragments[0]));
 		 tx.commit();
 		 
-	        
+	        // Set the drawer toggle as the DrawerListener
+		 /*
+		  * I saw on you latest Version that you didn't set the toggle as Listener
+		  * so the syncstate won't work
+		  */
+	        drawer.setDrawerListener(mDrawerToggle);
+
+	        getActionBar().setDisplayHomeAsUpEnabled(true);
+	        getActionBar().setHomeButtonEnabled(true);
 	}
-	
-	
 	 @Override
 	    public boolean onCreateOptionsMenu(Menu menu) {
 	        // Inflate the menu; this adds items to the action bar if it is present.
@@ -106,9 +109,26 @@ public class MainActivity extends FragmentActivity {
 	        return true;
 	    }
 	 
+	    protected void onPostCreate(Bundle savedInstanceState) {
+	        super.onPostCreate(savedInstanceState);
+	        // Sync the TOGGLE!!! state
+	        /*
+	         * you haven't use the toogle in you latest Github version ;)
+	         */
+	        mDrawerToggle.syncState();
+	    }
+
+	    @Override
+	    //set the configuration for toggle
+	    public void onConfigurationChanged(Configuration newConfig) {
+	        super.onConfigurationChanged(newConfig);
+	        mDrawerToggle.onConfigurationChanged(newConfig);
+	    }
+	 
 	 @Override
 	  public boolean onOptionsItemSelected(MenuItem item) {
 
+		 //exit when Toggle Button pressed
 	    if (mDrawerToggle.onOptionsItemSelected(item)) {
 	         return true;
 	    }
@@ -127,25 +147,12 @@ public class MainActivity extends FragmentActivity {
 	     // break;
 	      
 	    default:
-	    	
-	    }
-		
-		return super.onOptionsItemSelected(item);
-	    
-	  }
-	
-	 @Override
-	    protected void onPostCreate(Bundle savedInstanceState) {
-	        super.onPostCreate(savedInstanceState);
-	        // Sync the toggle state after onRestoreInstanceState has occurred.
-	         mDrawerToggle.syncState();
-	    }
-	 @Override
-	    public void onConfigurationChanged(Configuration newConfig) {
-	        super.onConfigurationChanged(newConfig);
-	        // Pass any configuration change to the drawer toggles
-	        mDrawerToggle.onConfigurationChanged(newConfig);
+	      break;
 	    }
 
+	    return super.onOptionsItemSelected(item);
+	  } 
+
+	
 
 }
