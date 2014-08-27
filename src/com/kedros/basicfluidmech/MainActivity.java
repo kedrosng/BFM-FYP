@@ -20,7 +20,7 @@ import android.widget.Toast;
 public class MainActivity extends FragmentActivity {
 	private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mDrawerToggle;
-
+    
     final String[] data ={
 			"About",
 			"Basic Knowledge",
@@ -79,6 +79,7 @@ public class MainActivity extends FragmentActivity {
 		                         @Override
 		                         public void onDrawerClosed(View drawerView){
 		                                 super.onDrawerClosed(drawerView);
+		                                 getActionBar().setTitle(data[pos]);
 		                                 FragmentTransaction tx = getSupportFragmentManager().beginTransaction();
 		                                 tx.replace(R.id.main, Fragment.instantiate(MainActivity.this, fragments[pos]));
 		                                 tx.commit();
@@ -131,8 +132,8 @@ public class MainActivity extends FragmentActivity {
 		
 		return super.onOptionsItemSelected(item);
 	    
-	  } 
-	 
+	  }
+	
 	 @Override
 	    protected void onPostCreate(Bundle savedInstanceState) {
 	        super.onPostCreate(savedInstanceState);
