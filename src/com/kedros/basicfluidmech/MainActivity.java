@@ -1,5 +1,6 @@
 package com.kedros.basicfluidmech;
 
+import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.v4.app.ActionBarDrawerToggle;
@@ -40,7 +41,14 @@ public class MainActivity extends FragmentActivity {
 	public void onCreate(Bundle savedInstanceState) {
 		 super.onCreate(savedInstanceState);
 		 setContentView(R.layout.activity_main);
-		
+		 
+		 if (isFirstTime()) {
+		        // What you do when the Application is Opened First time Goes here
+			 Toast.makeText(this, "Hello 1st time user", Toast.LENGTH_SHORT)
+			 .show();
+			
+		    }
+		 
 		 ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActionBar().getThemedContext(), android.R.layout.simple_list_item_1, data);
 
 		 final DrawerLayout drawer = (DrawerLayout)findViewById(R.id.drawer_layout);
@@ -99,6 +107,19 @@ public class MainActivity extends FragmentActivity {
 
 	        getActionBar().setDisplayHomeAsUpEnabled(true);
 	        getActionBar().setHomeButtonEnabled(true);
+	}
+	
+	private boolean isFirstTime()
+	{
+	    SharedPreferences preferences = getPreferences(MODE_PRIVATE);
+	    boolean ranBefore = preferences.getBoolean("RanBefore", false);
+	    if (!ranBefore) {
+	        // first time
+	        SharedPreferences.Editor editor = preferences.edit();
+	        editor.putBoolean("RanBefore", true);
+	        editor.commit();
+	    }
+	    return !ranBefore;
 	}
 	 @Override
 	    public boolean onCreateOptionsMenu(Menu menu) {

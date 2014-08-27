@@ -10,10 +10,15 @@
     <string name="title_activity_splash_screen">SplashScreen</string>
     <string name="about">Welcome to the Basic Fluid Mechanics!</string>
     <string name="action_search">Search</string>
+
     <color name="white">#FFFFFF</color>
+
     <string name="scrolldown">Here you can see me when you scroll down!</string>
     <string name="drawer_open">Drawer Opened</string>
     <string name="drawer_closed">Drawer Closed</string>
-    
+    <string name="title_activity_firsttimerun">FirstRun</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
 
 </resources>
