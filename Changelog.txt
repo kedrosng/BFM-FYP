@@ -6,3 +6,6 @@
 			Modify Search Button (Added Toast)
 20140815  - Remove Menu and add all back to the navigation drawer (Thanks to Rumos Mok)
 			Sync with Office's Computer
+20140828  - Add first time user tutorial pages
+			Add button to trigger the main page
+			Next Step, Themeing and put information in it.

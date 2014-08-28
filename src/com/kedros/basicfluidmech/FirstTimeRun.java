@@ -12,6 +12,8 @@ import android.app.ActionBar.TabListener;
 import android.app.FragmentTransaction;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.Window;
+import android.view.WindowManager;
 
 
 
@@ -22,6 +24,7 @@ public class FirstTimeRun extends FragmentActivity implements TabListener {
 	protected void onCreate(Bundle arg0) {
 		super.onCreate(arg0);
 		getActionBar().hide();
+		
 		setContentView(R.layout.activity_first_time_run);
 		viewPager=(ViewPager) findViewById(R.id.pager);
 		viewPager.setAdapter(new MyAdapter(getSupportFragmentManager()));

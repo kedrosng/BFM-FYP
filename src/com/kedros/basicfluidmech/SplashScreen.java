@@ -17,6 +17,7 @@ public class SplashScreen extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        
         //Only add windows with status bar
         //this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         //Add windows on full-screen, without status bar,

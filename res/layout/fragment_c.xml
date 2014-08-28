@@ -6,11 +6,23 @@
 
     <!-- TODO: Update blank fragment layout -->
 
+    
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fragmentc"
+          />
+
     <Button
         android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        android:onClick="FirstRun" />
+        android:layout_gravity="center"
+        android:onClick="FirstRun"
+        android:text="Go" />
 
+    
 </FrameLayout>
