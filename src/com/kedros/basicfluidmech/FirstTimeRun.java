@@ -21,25 +21,26 @@ public class FirstTimeRun extends FragmentActivity implements TabListener {
 	@Override
 	protected void onCreate(Bundle arg0) {
 		super.onCreate(arg0);
+		getActionBar().hide();
 		setContentView(R.layout.activity_first_time_run);
 		viewPager=(ViewPager) findViewById(R.id.pager);
 		viewPager.setAdapter(new MyAdapter(getSupportFragmentManager()));
-		actionBar=getActionBar();
-		actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
+		//actionBar=getActionBar();
+		//actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
 		
-		ActionBar.Tab tab1=actionBar.newTab();
-		tab1.setText("Tab 1");
-		tab1.setTabListener(this);
-		ActionBar.Tab tab2=actionBar.newTab();
-		tab2.setText("Tab 2");
-		tab2.setTabListener(this);
-		ActionBar.Tab tab3=actionBar.newTab();
-		tab3.setText("Tab 3");
-		tab3.setTabListener(this);
+		//ActionBar.Tab tab1=actionBar.newTab();
+		//tab1.setText("Tab 1");
+		//tab1.setTabListener(this);
+		//ActionBar.Tab tab2=actionBar.newTab();
+		//tab2.setText("Tab 2");
+		//tab2.setTabListener(this);
+		//ActionBar.Tab tab3=actionBar.newTab();
+		//tab3.setText("Tab 3");
+		//tab3.setTabListener(this);
 	
-		actionBar.addTab(tab1);
-		actionBar.addTab(tab2);
-		actionBar.addTab(tab3);
+		//actionBar.addTab(tab1);
+		//actionBar.addTab(tab2);
+		//actionBar.addTab(tab3);
 		
 	}
 	@Override

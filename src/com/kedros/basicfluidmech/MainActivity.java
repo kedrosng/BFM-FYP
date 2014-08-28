@@ -42,12 +42,12 @@ public class MainActivity extends FragmentActivity {
 		 super.onCreate(savedInstanceState);
 		 setContentView(R.layout.activity_main);
 		 
-		 if (isFirstTime()) {
+		// if (isFirstTime()) {
 		        // What you do when the Application is Opened First time Goes here
-			 Toast.makeText(this, "Hello 1st time user", Toast.LENGTH_SHORT)
-			 .show();
+			 //Toast.makeText(this, "Hello 1st time user", Toast.LENGTH_SHORT)
+			 //.show();
 			
-		    }
+		  //  }
 		 
 		 ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActionBar().getThemedContext(), android.R.layout.simple_list_item_1, data);
 
@@ -109,18 +109,18 @@ public class MainActivity extends FragmentActivity {
 	        getActionBar().setHomeButtonEnabled(true);
 	}
 	
-	private boolean isFirstTime()
-	{
-	    SharedPreferences preferences = getPreferences(MODE_PRIVATE);
-	    boolean ranBefore = preferences.getBoolean("RanBefore", false);
-	    if (!ranBefore) {
+	//private boolean isFirstTime()
+	//{
+	 //   SharedPreferences preferences = getPreferences(MODE_PRIVATE);
+	//    boolean ranBefore = preferences.getBoolean("RanBefore", false);
+	//    if (!ranBefore) {
 	        // first time
-	        SharedPreferences.Editor editor = preferences.edit();
-	        editor.putBoolean("RanBefore", true);
-	        editor.commit();
-	    }
-	    return !ranBefore;
-	}
+	//        SharedPreferences.Editor editor = preferences.edit();
+	//        editor.putBoolean("RanBefore", true);
+	//        editor.commit();
+	//    }
+	//    return !ranBefore;
+	//}
 	 @Override
 	    public boolean onCreateOptionsMenu(Menu menu) {
 	        // Inflate the menu; this adds items to the action bar if it is present.
