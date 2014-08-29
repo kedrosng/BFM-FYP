@@ -8,17 +8,17 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
  
-public class FragmentB extends Fragment {
+public class TutorialP2 extends Fragment {
  
     public static Fragment newInstance(Context context) {
-    	FragmentB f = new FragmentB();
+    	TutorialP2 f = new TutorialP2();
  
         return f;
     }
  
     @SuppressLint("InflateParams") @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState) {
-        ViewGroup root = (ViewGroup) inflater.inflate(R.layout.fragment_b, null);
+        ViewGroup root = (ViewGroup) inflater.inflate(R.layout.tutorialp2, null);
         return root;
     }
  

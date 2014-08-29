@@ -17,7 +17,7 @@ import android.view.WindowManager;
 
 
 
-public class FirstTimeRun extends FragmentActivity implements TabListener {
+public class FirstRun extends FragmentActivity implements TabListener {
 	ViewPager viewPager;
 	ActionBar actionBar;
 	@Override
@@ -25,7 +25,7 @@ public class FirstTimeRun extends FragmentActivity implements TabListener {
 		super.onCreate(arg0);
 		getActionBar().hide();
 		
-		setContentView(R.layout.activity_first_time_run);
+		setContentView(R.layout.activity_firstrun);
 		viewPager=(ViewPager) findViewById(R.id.pager);
 		viewPager.setAdapter(new MyAdapter(getSupportFragmentManager()));
 		//actionBar=getActionBar();
@@ -76,11 +76,11 @@ class MyAdapter extends FragmentPagerAdapter
 		// TODO Auto-generated method stub
 		switch (arg0){
 		case 0:
-			return new FragmentA();
+			return new TutorialP1();
 		case 1:
-			return new FragmentB();
+			return new TutorialP2();
 		case 2:
-			return new FragmentC();
+			return new TutorialP3();
 		}
 		return null;
 	}

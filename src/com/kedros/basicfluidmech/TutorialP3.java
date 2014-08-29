@@ -11,17 +11,17 @@ import android.view.ViewGroup;
 import android.view.View.OnClickListener;
 import android.widget.Button;
  
-public class FragmentC extends Fragment {
+public class TutorialP3 extends Fragment {
 	Button button;
     public static Fragment newInstance(Context context) {
-    	FragmentC f = new FragmentC();
+    	TutorialP3 f = new TutorialP3();
  
         return f;
     }
  
     @SuppressLint("InflateParams") @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState) {
-        ViewGroup root = (ViewGroup) inflater.inflate(R.layout.fragment_c, null);
+        ViewGroup root = (ViewGroup) inflater.inflate(R.layout.tutorialp3, null);
         Button mButton = (Button) root.findViewById(R.id.button1);
         mButton.setOnClickListener(new OnClickListener() {
            public void onClick(View v) {

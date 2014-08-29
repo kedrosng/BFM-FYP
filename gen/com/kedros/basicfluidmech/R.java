@@ -1214,17 +1214,17 @@ containing a value of this type.
         public static final int abc_search_view=0x7f030016;
         public static final int abc_simple_decor=0x7f030017;
         public static final int about=0x7f030018;
-        public static final int activity_first_time_run=0x7f030019;
+        public static final int activity_firstrun=0x7f030019;
         public static final int activity_help=0x7f03001a;
         public static final int activity_main=0x7f03001b;
         public static final int activity_splash=0x7f03001c;
-        public static final int fragment_a=0x7f03001d;
-        public static final int fragment_b=0x7f03001e;
-        public static final int fragment_c=0x7f03001f;
-        public static final int fragment_four=0x7f030020;
-        public static final int fragment_three=0x7f030021;
-        public static final int fragment_two=0x7f030022;
-        public static final int support_simple_spinner_dropdown_item=0x7f030023;
+        public static final int fragment_four=0x7f03001d;
+        public static final int fragment_three=0x7f03001e;
+        public static final int fragment_two=0x7f03001f;
+        public static final int support_simple_spinner_dropdown_item=0x7f030020;
+        public static final int tutorialp1=0x7f030021;
+        public static final int tutorialp2=0x7f030022;
+        public static final int tutorialp3=0x7f030023;
     }
     public static final class menu {
         public static final int action_icon=0x7f0c0000;
