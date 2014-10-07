@@ -31,11 +31,11 @@ public class MainActivity extends FragmentActivity {
 			
 			};
 	String[] fragments ={
-			"com.kedros.basicfluidmech.About",
-			"com.kedros.basicfluidmech.FragmentTwo",
-			"com.kedros.basicfluidmech.FragmentThree",
-			"com.kedros.basicfluidmech.FragmentFour",
-			"com.kedros.basicfluidmech.Help"
+			"com.kedros.basicfluidmech.NavDrawer1",
+			"com.kedros.basicfluidmech.NavDrawer2",
+			"com.kedros.basicfluidmech.NavDrawer3",
+			"com.kedros.basicfluidmech.NavDrawer4",
+			"com.kedros.basicfluidmech.NavDrawer5"
 			};
 	@Override
 	public void onCreate(Bundle savedInstanceState) {

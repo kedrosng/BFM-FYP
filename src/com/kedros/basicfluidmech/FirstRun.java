@@ -23,8 +23,9 @@ public class FirstRun extends FragmentActivity implements TabListener {
 	@Override
 	protected void onCreate(Bundle arg0) {
 		super.onCreate(arg0);
-		getActionBar().hide();
-		
+		requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, 
+                                WindowManager.LayoutParams.FLAG_FULLSCREEN);
 		setContentView(R.layout.activity_firstrun);
 		viewPager=(ViewPager) findViewById(R.id.pager);
 		viewPager.setAdapter(new MyAdapter(getSupportFragmentManager()));
