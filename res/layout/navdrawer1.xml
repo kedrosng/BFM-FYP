@@ -2,17 +2,31 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical" 
+    android:background="@drawable/bg" >
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/welcome_page"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="false"
         android:layout_centerVertical="false"
-        android:layout_marginTop="20dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:text="@string/about"/>
+        android:layout_marginTop="20dp"
+        android:text="@string/welcome"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/welcome_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/welcome_page"
+        android:layout_below="@+id/welcome_page"
+        android:layout_marginTop="25dp"
+        android:lineSpacingMultiplier="1.25"
+        android:text="@string/welcome_content"
+        android:textSize="16sp"
+        android:width="330dp" />
 
 </RelativeLayout>

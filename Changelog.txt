@@ -9,4 +9,16 @@
 20140828  - Add first time user tutorial pages
 			Add button to trigger the main page
 			Next Step, Themeing and put information in it.
-20141007 	New Made.		
+20141007 	New Made.
+20141008  - After two hours fixing, more information added
+			About and Basic Fluid knowledge Added.
+			SplashScreen not fixed
+			
+			
+			
+Features Left:
+1. Formula Page
+2. Calculation Page
+3. Sound and Picture Intergrated
+4. GIF integrated
+		
