@@ -1085,8 +1085,9 @@ containing a value of this type.
         public static final int ic_action_search=0x7f02005b;
         public static final int ic_drawer=0x7f02005c;
         public static final int ic_launcher=0x7f02005d;
-        public static final int splash_icon=0x7f02005e;
-        public static final int unnamed=0x7f02005f;
+        public static final int rey_formula=0x7f02005e;
+        public static final int splash_icon=0x7f02005f;
+        public static final int unnamed=0x7f020060;
     }
     public static final class id {
         public static final int ScrollView01=0x7f050043;
@@ -1098,13 +1099,13 @@ containing a value of this type.
         public static final int action_bar_subtitle=0x7f050023;
         public static final int action_bar_title=0x7f050022;
         public static final int action_context_bar=0x7f05001d;
-        public static final int action_exit=0x7f05004f;
-        public static final int action_help=0x7f05004e;
+        public static final int action_exit=0x7f050051;
+        public static final int action_help=0x7f050050;
         public static final int action_menu_divider=0x7f050016;
         public static final int action_menu_presenter=0x7f050017;
         public static final int action_mode_close_button=0x7f050024;
-        public static final int action_search=0x7f05004c;
-        public static final int action_settings=0x7f05004d;
+        public static final int action_search=0x7f05004e;
+        public static final int action_settings=0x7f05004f;
         public static final int activity_chooser_view_content=0x7f050025;
         public static final int always=0x7f05000b;
         public static final int basic_c1=0x7f050045;
@@ -1113,7 +1114,7 @@ containing a value of this type.
         public static final int basic_t2=0x7f050046;
         public static final int basic_t3=0x7f050048;
         public static final int beginning=0x7f050011;
-        public static final int button1=0x7f05004b;
+        public static final int button1=0x7f05004d;
         public static final int checkbox=0x7f05002d;
         public static final int collapseActionView=0x7f05000d;
         public static final int default_activity_button=0x7f050028;
@@ -1131,7 +1132,7 @@ containing a value of this type.
         public static final int icon=0x7f05002a;
         public static final int ifRoom=0x7f05000a;
         public static final int image=0x7f050027;
-        public static final int imageView1=0x7f05004a;
+        public static final int imageView1=0x7f05004b;
         public static final int imgLogo=0x7f050040;
         public static final int listMode=0x7f050001;
         public static final int list_item=0x7f050029;
@@ -1141,6 +1142,8 @@ containing a value of this type.
         public static final int none=0x7f050010;
         public static final int normal=0x7f050000;
         public static final int pager=0x7f05003c;
+        public static final int pipe_content=0x7f05004a;
+        public static final int pipe_title=0x7f050049;
         public static final int progress_circular=0x7f050018;
         public static final int progress_horizontal=0x7f050019;
         public static final int radio=0x7f05002f;
@@ -1161,7 +1164,7 @@ containing a value of this type.
         public static final int split_action_bar=0x7f05001e;
         public static final int submit_area=0x7f050039;
         public static final int tabMode=0x7f050002;
-        public static final int textView1=0x7f050049;
+        public static final int textView1=0x7f05004c;
         public static final int title=0x7f05002b;
         public static final int top_action_bar=0x7f050020;
         public static final int up=0x7f050021;
@@ -1296,6 +1299,8 @@ containing a value of this type.
         public static final int hello_blank_fragment=0x7f0a001f;
         public static final int hello_world=0x7f0a0010;
         public static final int nav1=0x7f0a001b;
+        public static final int pipe_content=0x7f0a0026;
+        public static final int pipe_title=0x7f0a0025;
         public static final int scrolldown=0x7f0a0017;
         public static final int title_activity_first_time_run=0x7f0a001e;
         public static final int title_activity_firsttimerun=0x7f0a001a;
