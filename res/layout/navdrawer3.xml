@@ -27,16 +27,18 @@
         android:lineSpacingMultiplier="1.25"
         android:text="@string/pipe_content"
         android:textSize="16sp"
-        android:width="330dp" />
+        android:layout_marginRight="10dp"
+        />
 
-    <ImageView
-        android:id="@+id/imageView1"
+    <ImageButton
+        android:id="@+id/reyformula"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/pipe_content"
         android:layout_below="@+id/pipe_content"
-        android:layout_marginLeft="9dp"
-        android:layout_marginTop="14dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:clickable="true"
+        android:onClick="reyclick"
         android:maxWidth="150dp"
         android:scaleType="matrix"
         android:src="@drawable/rey_formula" />

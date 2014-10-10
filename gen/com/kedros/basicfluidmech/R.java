@@ -1099,13 +1099,13 @@ containing a value of this type.
         public static final int action_bar_subtitle=0x7f050023;
         public static final int action_bar_title=0x7f050022;
         public static final int action_context_bar=0x7f05001d;
-        public static final int action_exit=0x7f050051;
-        public static final int action_help=0x7f050050;
+        public static final int action_exit=0x7f050052;
+        public static final int action_help=0x7f050051;
         public static final int action_menu_divider=0x7f050016;
         public static final int action_menu_presenter=0x7f050017;
         public static final int action_mode_close_button=0x7f050024;
-        public static final int action_search=0x7f05004e;
-        public static final int action_settings=0x7f05004f;
+        public static final int action_search=0x7f05004f;
+        public static final int action_settings=0x7f050050;
         public static final int activity_chooser_view_content=0x7f050025;
         public static final int always=0x7f05000b;
         public static final int basic_c1=0x7f050045;
@@ -1114,7 +1114,7 @@ containing a value of this type.
         public static final int basic_t2=0x7f050046;
         public static final int basic_t3=0x7f050048;
         public static final int beginning=0x7f050011;
-        public static final int button1=0x7f05004d;
+        public static final int button1=0x7f05004e;
         public static final int checkbox=0x7f05002d;
         public static final int collapseActionView=0x7f05000d;
         public static final int default_activity_button=0x7f050028;
@@ -1132,7 +1132,7 @@ containing a value of this type.
         public static final int icon=0x7f05002a;
         public static final int ifRoom=0x7f05000a;
         public static final int image=0x7f050027;
-        public static final int imageView1=0x7f05004b;
+        public static final int imageView1=0x7f05004d;
         public static final int imgLogo=0x7f050040;
         public static final int listMode=0x7f050001;
         public static final int list_item=0x7f050029;
@@ -1147,6 +1147,7 @@ containing a value of this type.
         public static final int progress_circular=0x7f050018;
         public static final int progress_horizontal=0x7f050019;
         public static final int radio=0x7f05002f;
+        public static final int reyformula=0x7f05004b;
         public static final int search_badge=0x7f050032;
         public static final int search_bar=0x7f050031;
         public static final int search_button=0x7f050033;
