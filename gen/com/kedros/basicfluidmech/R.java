@@ -1115,7 +1115,7 @@ containing a value of this type.
         public static final int basic_t3=0x7f050048;
         public static final int beginning=0x7f050011;
         public static final int button1=0x7f050056;
-        public static final int calculate_button=0x7f050052;
+        public static final int calculate_button=0x7f050053;
         public static final int checkbox=0x7f05002d;
         public static final int collapseActionView=0x7f05000d;
         public static final int default_activity_button=0x7f050028;
@@ -1133,7 +1133,7 @@ containing a value of this type.
         public static final int icon=0x7f05002a;
         public static final int ifRoom=0x7f05000a;
         public static final int image=0x7f050027;
-        public static final int imageView1=0x7f050055;
+        public static final int imageView1=0x7f050054;
         public static final int imgLogo=0x7f050040;
         public static final int listMode=0x7f050001;
         public static final int list_item=0x7f050029;
@@ -1148,13 +1148,13 @@ containing a value of this type.
         public static final int progress_circular=0x7f050018;
         public static final int progress_horizontal=0x7f050019;
         public static final int radio=0x7f05002f;
-        public static final int rey_answer=0x7f050054;
+        public static final int rey_answer=0x7f050055;
         public static final int rey_content=0x7f05004e;
         public static final int rey_density=0x7f05004f;
         public static final int rey_dia=0x7f050051;
         public static final int rey_title=0x7f05004d;
         public static final int rey_velocity=0x7f050050;
-        public static final int rey_viscosity=0x7f050053;
+        public static final int rey_viscosity=0x7f050052;
         public static final int reyformula=0x7f05004b;
         public static final int search_badge=0x7f050032;
         public static final int search_bar=0x7f050031;
