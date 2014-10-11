@@ -38,7 +38,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="12dp"
         android:clickable="true"
-        android:onClick="reyclick"
+        android:onClick="onClick"
         android:maxWidth="150dp"
         android:scaleType="matrix"
         android:src="@drawable/rey_formula" />

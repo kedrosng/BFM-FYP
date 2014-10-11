@@ -29,7 +29,8 @@ public class MainActivity extends FragmentActivity {
 			"com.kedros.basicfluidmech.NavDrawer2",
 			"com.kedros.basicfluidmech.NavDrawer3",
 			"com.kedros.basicfluidmech.NavDrawer4",
-			"com.kedros.basicfluidmech.NavDrawer5" };
+			"com.kedros.basicfluidmech.NavDrawer5",
+			"com.kedros.basicfluidmech.TutorialP1" };
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -175,6 +176,17 @@ public class MainActivity extends FragmentActivity {
 		}
 
 		return super.onOptionsItemSelected(item);
+	}
+
+	// manage button clicked//
+	public void onClick(View view) {
+		FragmentTransaction tx = getSupportFragmentManager().beginTransaction();
+		tx.replace(R.id.main,
+				Fragment.instantiate(MainActivity.this, fragments[5]));
+		tx.commit();
+		Toast.makeText(this, "ImageButton is clicked!", Toast.LENGTH_SHORT)
+				.show();
+
 	}
 
 }
