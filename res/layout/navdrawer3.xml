@@ -41,6 +41,7 @@
         android:onClick="onClick"
         android:maxWidth="150dp"
         android:scaleType="matrix"
-        android:src="@drawable/rey_formula" />
+        android:src="@drawable/rey_formula"
+        android:background="@null" />
 
 </RelativeLayout>

@@ -44,6 +44,10 @@
             android:name=".FirstRun"
             android:label="@string/title_activity_first_time_run" >
         </activity>
+        <activity
+            android:name=".ReyFormula"
+            android:label="@string/title_activity_rey_formula" >
+        </activity>
     </application>
 
 </manifest>

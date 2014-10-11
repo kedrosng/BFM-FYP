@@ -1099,13 +1099,13 @@ containing a value of this type.
         public static final int action_bar_subtitle=0x7f050023;
         public static final int action_bar_title=0x7f050022;
         public static final int action_context_bar=0x7f05001d;
-        public static final int action_exit=0x7f050052;
-        public static final int action_help=0x7f050051;
+        public static final int action_exit=0x7f05005a;
+        public static final int action_help=0x7f050059;
         public static final int action_menu_divider=0x7f050016;
         public static final int action_menu_presenter=0x7f050017;
         public static final int action_mode_close_button=0x7f050024;
-        public static final int action_search=0x7f05004f;
-        public static final int action_settings=0x7f050050;
+        public static final int action_search=0x7f050057;
+        public static final int action_settings=0x7f050058;
         public static final int activity_chooser_view_content=0x7f050025;
         public static final int always=0x7f05000b;
         public static final int basic_c1=0x7f050045;
@@ -1114,7 +1114,8 @@ containing a value of this type.
         public static final int basic_t2=0x7f050046;
         public static final int basic_t3=0x7f050048;
         public static final int beginning=0x7f050011;
-        public static final int button1=0x7f05004e;
+        public static final int button1=0x7f050056;
+        public static final int calculate_button=0x7f050052;
         public static final int checkbox=0x7f05002d;
         public static final int collapseActionView=0x7f05000d;
         public static final int default_activity_button=0x7f050028;
@@ -1132,7 +1133,7 @@ containing a value of this type.
         public static final int icon=0x7f05002a;
         public static final int ifRoom=0x7f05000a;
         public static final int image=0x7f050027;
-        public static final int imageView1=0x7f05004d;
+        public static final int imageView1=0x7f050055;
         public static final int imgLogo=0x7f050040;
         public static final int listMode=0x7f050001;
         public static final int list_item=0x7f050029;
@@ -1147,6 +1148,13 @@ containing a value of this type.
         public static final int progress_circular=0x7f050018;
         public static final int progress_horizontal=0x7f050019;
         public static final int radio=0x7f05002f;
+        public static final int rey_answer=0x7f050054;
+        public static final int rey_content=0x7f05004e;
+        public static final int rey_density=0x7f05004f;
+        public static final int rey_dia=0x7f050051;
+        public static final int rey_title=0x7f05004d;
+        public static final int rey_velocity=0x7f050050;
+        public static final int rey_viscosity=0x7f050053;
         public static final int reyformula=0x7f05004b;
         public static final int search_badge=0x7f050032;
         public static final int search_bar=0x7f050031;
@@ -1232,17 +1240,19 @@ containing a value of this type.
         public static final int navdrawer3=0x7f03001d;
         public static final int navdrawer4=0x7f03001e;
         public static final int navdrawer5=0x7f03001f;
-        public static final int support_simple_spinner_dropdown_item=0x7f030020;
-        public static final int tutorialp1=0x7f030021;
-        public static final int tutorialp2=0x7f030022;
-        public static final int tutorialp3=0x7f030023;
+        public static final int reyformula=0x7f030020;
+        public static final int support_simple_spinner_dropdown_item=0x7f030021;
+        public static final int tutorialp1=0x7f030022;
+        public static final int tutorialp2=0x7f030023;
+        public static final int tutorialp3=0x7f030024;
     }
     public static final class menu {
         public static final int action_icon=0x7f0c0000;
         public static final int first_time_run=0x7f0c0001;
         public static final int help=0x7f0c0002;
         public static final int main=0x7f0c0003;
-        public static final int splash_screen=0x7f0c0004;
+        public static final int rey_formula=0x7f0c0004;
+        public static final int splash_screen=0x7f0c0005;
     }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
@@ -1302,10 +1312,13 @@ containing a value of this type.
         public static final int nav1=0x7f0a001b;
         public static final int pipe_content=0x7f0a0026;
         public static final int pipe_title=0x7f0a0025;
+        public static final int reyformula_content=0x7f0a0029;
+        public static final int reyformula_title=0x7f0a0028;
         public static final int scrolldown=0x7f0a0017;
         public static final int title_activity_first_time_run=0x7f0a001e;
         public static final int title_activity_firsttimerun=0x7f0a001a;
         public static final int title_activity_help=0x7f0a0014;
+        public static final int title_activity_rey_formula=0x7f0a0027;
         public static final int title_activity_splash_screen=0x7f0a0015;
         public static final int title_section2=0x7f0a001c;
         public static final int title_section3=0x7f0a001d;

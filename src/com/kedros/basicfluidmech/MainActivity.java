@@ -14,7 +14,9 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
+import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends FragmentActivity {
@@ -30,7 +32,7 @@ public class MainActivity extends FragmentActivity {
 			"com.kedros.basicfluidmech.NavDrawer3",
 			"com.kedros.basicfluidmech.NavDrawer4",
 			"com.kedros.basicfluidmech.NavDrawer5",
-			"com.kedros.basicfluidmech.TutorialP1" };
+			"com.kedros.basicfluidmech.ReyFormula" };
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -184,8 +186,27 @@ public class MainActivity extends FragmentActivity {
 		tx.replace(R.id.main,
 				Fragment.instantiate(MainActivity.this, fragments[5]));
 		tx.commit();
-		Toast.makeText(this, "ImageButton is clicked!", Toast.LENGTH_SHORT)
-				.show();
+		// Toast.makeText(this, "ImageButton is clicked!", Toast.LENGTH_SHORT)
+		// .show();
+
+	}
+
+	// Reynolds Number Calculation//
+	public void reyCalculate(View view) {
+		EditText number1 = (EditText) findViewById(R.id.rey_density);
+		EditText number2 = (EditText) findViewById(R.id.rey_velocity);
+		EditText number3 = (EditText) findViewById(R.id.rey_dia);
+		EditText number4 = (EditText) findViewById(R.id.rey_viscosity);
+		EditText reyresult = (EditText) findViewById(R.id.rey_answer);
+
+		float result = Float.parseFloat(number1.getText().toString())
+				* Float.parseFloat(number2.getText().toString())
+				* Float.parseFloat(number3.getText().toString())
+				/ Float.parseFloat(number4.getText().toString());
+		reyresult.setText("Reynolds Number is" + " " + Float.toString(result));
+
+		// Toast.makeText(this, "Reycalculate is clicked!", Toast.LENGTH_SHORT)
+		// .show();
 
 	}
 
