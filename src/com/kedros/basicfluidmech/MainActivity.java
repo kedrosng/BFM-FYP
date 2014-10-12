@@ -23,8 +23,8 @@ public class MainActivity extends FragmentActivity {
 
 	ActionBarDrawerToggle mDrawerToggle;
 
-	String[] data = { "About", "Basic Knowledge", "Pipe Flow",
-			"Open Channel Flow", "Help"
+	String[] data = { "About", "What is Fluid", "Type of Flow",
+			"Impact Force", "Help"
 
 	};
 	String[] fragments = { "com.kedros.basicfluidmech.NavDrawer1",
@@ -205,7 +205,7 @@ public class MainActivity extends FragmentActivity {
 				/ Float.parseFloat(number4.getText().toString());
 		reyresult.setText("Reynolds Number is" + " " + Float.toString(result));
 
-		// Toast.makeText(this, "Reycalculate is clicked!", Toast.LENGTH_SHORT)
+		// Toast.makeText(this, "Calculate Button is clicked!", Toast.LENGTH_SHORT)
 		// .show();
 
 	}

@@ -67,6 +67,72 @@
             android:layout_marginTop="15dp"
             android:text="@string/basic_t3"
             android:textSize="18sp" />
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/basic_t3"
+            android:layout_below="@+id/basic_t3"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="25dp"
+            android:textSize="16sp" >
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:text="• " >
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="Density" >
+                </TextView>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:text="• " >
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="Viscosity" >
+                </TextView>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:text="• " >
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="Temperature" >
+                </TextView>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:text="• " >
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="Pressure" >
+                </TextView>
+            </TableRow>
+        </TableLayout>
     </RelativeLayout>
 
 </ScrollView>

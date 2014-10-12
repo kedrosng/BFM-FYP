@@ -28,6 +28,7 @@
     <string name="basic_t2">Fluid vs Solid</string>
     <string name="basic_c2">In most cases, substances can be classified easily as either solids or fluids. However, certain cases appear to be solids because their rate of deformation under their own weight is very small. </string>
     <string name="basic_t3">Properties of Fluid</string>
+    <string name="basic_c3">Viscocity</string>
     <string name="pipe_title">Laminar vs Turbulent</string>
     <string name="pipe_content">In pipes, at values of the Reynolds number above 2000, flow will not necessarily be turbulent. Laminar flow has been maintained up to Re = 50000, but conditions are unstable and any disturbance will cause reversion to normal turbulent flow. In straight pipes of constant diameter, flow can be assumed to be turbulent if the Reynolds number exceeds 4000. You can detemine by using the formula below.</string>
     <string name="title_activity_rey_formula">ReyFormula</string>
