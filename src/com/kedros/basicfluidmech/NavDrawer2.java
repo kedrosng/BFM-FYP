@@ -19,7 +19,10 @@ public class NavDrawer2 extends Fragment {
     @SuppressLint("InflateParams") @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState) {
         ViewGroup root = (ViewGroup) inflater.inflate(R.layout.navdrawer2, null);
+        
         return root;
+        
     }
+    
  
 }

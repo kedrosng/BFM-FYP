@@ -7,10 +7,13 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.widget.DrawerLayout;
+import android.text.method.LinkMovementMethod;
+import android.text.style.URLSpan;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.webkit.WebView;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
@@ -23,8 +26,8 @@ public class MainActivity extends FragmentActivity {
 
 	ActionBarDrawerToggle mDrawerToggle;
 
-	String[] data = { "About", "What is Fluid", "Type of Flow",
-			"Impact Force", "Help"
+	String[] data = { "About", "What is Fluid", "Type of Flow", "Impact Force",
+			"Help"
 
 	};
 	String[] fragments = { "com.kedros.basicfluidmech.NavDrawer1",
@@ -45,7 +48,7 @@ public class MainActivity extends FragmentActivity {
 		// .show();
 
 		// }
-
+		 
 		ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActionBar()
 				.getThemedContext(), android.R.layout.simple_list_item_1, data);
 
@@ -114,6 +117,8 @@ public class MainActivity extends FragmentActivity {
 
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 		getActionBar().setHomeButtonEnabled(true);
+		
+
 	}
 
 	// private boolean isFirstTime()
@@ -205,7 +210,8 @@ public class MainActivity extends FragmentActivity {
 				/ Float.parseFloat(number4.getText().toString());
 		reyresult.setText("Reynolds Number is" + " " + Float.toString(result));
 
-		// Toast.makeText(this, "Calculate Button is clicked!", Toast.LENGTH_SHORT)
+		// Toast.makeText(this, "Calculate Button is clicked!",
+		// Toast.LENGTH_SHORT)
 		// .show();
 
 	}

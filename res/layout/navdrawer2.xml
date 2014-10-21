@@ -75,7 +75,7 @@
             android:layout_below="@+id/basic_t3"
             android:layout_marginRight="10dp"
             android:layout_marginTop="25dp"
-            android:textSize="16sp" >
+            android:textSize="28sp" >
 
             <TableRow>
 
@@ -85,10 +85,15 @@
                 </TextView>
 
                 <TextView
+                    android:id="@+id/density"
                     android:layout_width="wrap_content"
                     android:layout_column="2"
-                    android:text="Density" >
+                    android:autoLink="web"
+                    android:linksClickable="true"
+                    android:text="@string/density" >
                 </TextView>
+
+               
             </TableRow>
 
             <TableRow>
@@ -99,6 +104,7 @@
                 </TextView>
 
                 <TextView
+                    android:id="@+id/viscosity"
                     android:layout_width="wrap_content"
                     android:layout_column="2"
                     android:text="Viscosity" >
@@ -113,6 +119,7 @@
                 </TextView>
 
                 <TextView
+                    android:id="@+id/temperature"
                     android:layout_width="wrap_content"
                     android:layout_column="2"
                     android:text="Temperature" >
@@ -127,6 +134,7 @@
                 </TextView>
 
                 <TextView
+                    android:id="@+id/pressure"
                     android:layout_width="wrap_content"
                     android:layout_column="2"
                     android:text="Pressure" >

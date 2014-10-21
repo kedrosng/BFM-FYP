@@ -34,5 +34,8 @@
     <string name="title_activity_rey_formula">ReyFormula</string>
     <string name="reyformula_title">Reynolds Number Calculator</string>
     <string name="reyformula_content">Please input the numbers.</string>
+    <string name="impact_title">Impact Force in Fluid</string>
+    <string name="impact_content">The general rules of statics apply to fluids at rest, but, from the definition of a fluid, there will be no shearing forces acting and, therefore, all forces (such as F in Fig. (a)) exerted between the fluid and a solid boundary must act at right angles to the boundary. If the boundary is curved (Fig. (b)), it can be considered to be composed of a series of chords on each of which a force F1, F2, . . . , Fn acts perpendicular to the surface at the section concerned. Similarly, considering any plane drawn through a body of fluid at rest (Fig. (c)), the force exerted by one portion of the fluid on the other acts at right angles to this plane.</string>
+    <string name="density"><a href="http://www.google.com">Density</a></string>
 
 </resources>
