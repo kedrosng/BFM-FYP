@@ -7,19 +7,15 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.widget.DrawerLayout;
-import android.text.method.LinkMovementMethod;
-import android.text.style.URLSpan;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.webkit.WebView;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends FragmentActivity {
@@ -35,7 +31,9 @@ public class MainActivity extends FragmentActivity {
 			"com.kedros.basicfluidmech.NavDrawer3",
 			"com.kedros.basicfluidmech.NavDrawer4",
 			"com.kedros.basicfluidmech.NavDrawer5",
-			"com.kedros.basicfluidmech.ReyFormula" };
+			"com.kedros.basicfluidmech.ReyFormula",
+			"com.kedros.basicfluidmech.WaterJet",
+			"com.kedros.basicfluidmech.WaterNozzle" };
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -48,9 +46,9 @@ public class MainActivity extends FragmentActivity {
 		// .show();
 
 		// }
-		 
+
 		ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActionBar()
-				.getThemedContext(), android.R.layout.simple_list_item_1, data);
+				.getThemedContext(), R.layout.adaptertheme, data);
 
 		final DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
 
@@ -117,7 +115,6 @@ public class MainActivity extends FragmentActivity {
 
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 		getActionBar().setHomeButtonEnabled(true);
-		
 
 	}
 
@@ -186,15 +183,6 @@ public class MainActivity extends FragmentActivity {
 	}
 
 	// manage button clicked//
-	public void onClick(View view) {
-		FragmentTransaction tx = getSupportFragmentManager().beginTransaction();
-		tx.replace(R.id.main,
-				Fragment.instantiate(MainActivity.this, fragments[5]));
-		tx.commit();
-		// Toast.makeText(this, "ImageButton is clicked!", Toast.LENGTH_SHORT)
-		// .show();
-
-	}
 
 	// Reynolds Number Calculation//
 	public void reyCalculate(View view) {
@@ -213,6 +201,34 @@ public class MainActivity extends FragmentActivity {
 		// Toast.makeText(this, "Calculate Button is clicked!",
 		// Toast.LENGTH_SHORT)
 		// .show();
+
+	}
+
+	public void onClick(View view) {
+		FragmentTransaction tx = getSupportFragmentManager().beginTransaction();
+		tx.replace(R.id.main,
+				Fragment.instantiate(MainActivity.this, fragments[5]));
+		tx.commit();
+		// Toast.makeText(this, "ImageButton is clicked!", Toast.LENGTH_SHORT)
+		// .show();
+
+	}
+
+	// Page of Water Jet//
+	public void waterjet(View view) {
+		FragmentTransaction tx = getSupportFragmentManager().beginTransaction();
+		tx.replace(R.id.main,
+				Fragment.instantiate(MainActivity.this, fragments[6]));
+		tx.commit();
+
+	}
+
+	// Page of Water Nozzle//
+	public void Nozzle(View view) {
+		FragmentTransaction tx = getSupportFragmentManager().beginTransaction();
+		tx.replace(R.id.main,
+				Fragment.instantiate(MainActivity.this, fragments[7]));
+		tx.commit();
 
 	}
 
