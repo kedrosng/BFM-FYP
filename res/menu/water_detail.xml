@@ -1,6 +1,6 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.kedros.basicfluidmech.ReyFormula" >
+    tools:context="com.kedros.basicfluidmech.WaterDetail" >
 
     <item
         android:id="@+id/action_back"

@@ -69,6 +69,7 @@
             android:textSize="18sp" />
 
         <TableLayout
+            android:id="@+id/tableLayout1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/basic_t3"
@@ -90,10 +91,9 @@
                     android:layout_column="2"
                     android:autoLink="web"
                     android:linksClickable="true"
-                    android:text="@string/density" >
+                    android:text=" Density"
+                    android:textSize="16sp" >
                 </TextView>
-
-               
             </TableRow>
 
             <TableRow>
@@ -107,7 +107,8 @@
                     android:id="@+id/viscosity"
                     android:layout_width="wrap_content"
                     android:layout_column="2"
-                    android:text="Viscosity" >
+                    android:text=" Viscosity"
+                    android:textSize="16sp" >
                 </TextView>
             </TableRow>
 
@@ -122,7 +123,8 @@
                     android:id="@+id/temperature"
                     android:layout_width="wrap_content"
                     android:layout_column="2"
-                    android:text="Temperature" >
+                    android:text=" Temperature"
+                    android:textSize="16sp" >
                 </TextView>
             </TableRow>
 
@@ -137,10 +139,22 @@
                     android:id="@+id/pressure"
                     android:layout_width="wrap_content"
                     android:layout_column="2"
-                    android:text="Pressure" >
+                    android:text=" Pressure"
+                    android:textSize="16sp" >
                 </TextView>
             </TableRow>
         </TableLayout>
+
+        <ImageView
+            android:id="@+id/waterglass"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_alignTop="@+id/basic_t3"
+            android:layout_toRightOf="@+id/basic_t2"
+            android:src="@drawable/waterglass"
+            android:clickable="true"
+            android:onClick="waterglass" />
+
     </RelativeLayout>
 
 </ScrollView>

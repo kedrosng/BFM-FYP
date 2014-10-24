@@ -1,5 +1,6 @@
 package com.kedros.basicfluidmech;
 
+import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.v4.app.ActionBarDrawerToggle;
@@ -205,10 +206,8 @@ public class MainActivity extends FragmentActivity {
 	}
 
 	public void onClick(View view) {
-		FragmentTransaction tx = getSupportFragmentManager().beginTransaction();
-		tx.replace(R.id.main,
-				Fragment.instantiate(MainActivity.this, fragments[5]));
-		tx.commit();
+		Intent intent = new Intent(this, ReyFormula.class);
+	    startActivity(intent);
 		// Toast.makeText(this, "ImageButton is clicked!", Toast.LENGTH_SHORT)
 		// .show();
 
@@ -231,5 +230,9 @@ public class MainActivity extends FragmentActivity {
 		tx.commit();
 
 	}
-
+	//Detail of water//
+	public void waterglass (View v) {
+ 	   Intent intent = new Intent(this, WaterDetail.class);
+ 	    startActivity(intent);
+	}
 }

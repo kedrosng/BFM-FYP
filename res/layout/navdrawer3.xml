@@ -43,29 +43,6 @@
         android:scaleType="matrix"
         android:src="@drawable/rey_formula" />
 
-    <Button
-        android:id="@+id/button_waterjet"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/reyformula"
-        android:layout_below="@+id/reyformula"
-        android:layout_marginLeft="11dp"
-        android:layout_marginTop="69dp"
-        android:background="@null"
-        android:clickable="true"
-        android:onClick="waterjet"
-        android:text="WaterJet" />
-
-    <Button
-        android:id="@+id/button_nozzle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/button_waterjet"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="36dp"
-        android:background="@null"
-        android:clickable="true"
-        android:onClick="Nozzle"
-        android:text="Nozzle" />
+    
 
 </RelativeLayout>

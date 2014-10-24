@@ -24,12 +24,12 @@
     <string name="title_activity_first_time_run">FirstTimeRun</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="basic_t1">What is Fluid?</string>
-    <string name="basic_c1">Fluids flow under the action of such forces, deforming continuously for as long as the force is applied. A fluid is unable to retain any unsupported shape; it flows under its own weight and takes the shape of any solid body with which it comes into contact.</string>
-    <string name="basic_t2">Fluid vs Solid</string>
-    <string name="basic_c2">In most cases, substances can be classified easily as either solids or fluids. However, certain cases appear to be solids because their rate of deformation under their own weight is very small. </string>
+    <string name="basic_c1">A substance in the liquid and gas phase is referred to as a fluid. A solid can resist an applied stress by deforming. WHen a constant shear stress is applied, a solid stops deorming at a fixed strain angle, whereas a fluid deforms continuously with a cerain strain rate.</string>
+    <string name="basic_t2">Different between Each State</string>
+    <string name="basic_c2">In a fluid at rest, the shear stress is zero because the fluid will flow under a shear stress. The molecules in a solid are arranged in a pattern and the attractive forces between molecules are large and keep the molecules at fixed postitions. In a liquid, chunks of molecules can move relative to each other, but the volume remains relatively constant because of the strong cohesive forces between the molecules. A gas expands until it fills the entire available space and does not form a free surface.</string>
     <string name="basic_t3">Properties of Fluid</string>
     <string name="basic_c3">Viscocity</string>
-    <string name="pipe_title">Laminar vs Turbulent</string>
+    <string name="pipe_title">Type of Flow</string>
     <string name="pipe_content">In pipes, at values of the Reynolds number above 2000, flow will not necessarily be turbulent. Laminar flow has been maintained up to Re = 50000, but conditions are unstable and any disturbance will cause reversion to normal turbulent flow. In straight pipes of constant diameter, flow can be assumed to be turbulent if the Reynolds number exceeds 4000. You can detemine by using the formula below.</string>
     <string name="title_activity_rey_formula">ReyFormula</string>
     <string name="reyformula_title">Reynolds Number Calculator</string>
@@ -39,5 +39,6 @@
     <string name="density"><a href="http://www.google.com">Density</a></string>
     <string name="title_activity_water_jet">Water Jet</string>
     <string name="title_activity_water_nozzle">Water Nozzle</string>
+    <string name="title_activity_water_detail">WaterDetail</string>
 
 </resources>

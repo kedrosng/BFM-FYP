@@ -7,18 +7,18 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-public class ReyFormula extends Activity {
+public class WaterDetail extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.reyformula);
+		setContentView(R.layout.waterdetail);
 	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.rey_formula, menu);
+		getMenuInflater().inflate(R.menu.water_detail, menu);
 		return true;
 	}
 
