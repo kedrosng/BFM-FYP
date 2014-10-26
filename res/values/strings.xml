@@ -46,5 +46,6 @@
     <string name="title_activity_steady">Steady</string>
     <string name="title_activity_viscosity">Viscosity</string>
     <string name="title_activity_compressibility">Compressibility</string>
+    <string name="title_activity_spinner">Spinner</string>
 
 </resources>

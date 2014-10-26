@@ -18,7 +18,7 @@
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".NavDrawer5"
+            android:name=".HelpPage"
             android:label="@string/title_activity_help"
             android:parentActivityName=".MainActivity" >
             <intent-filter>
@@ -83,6 +83,10 @@
         <activity
             android:name=".Compressibility"
             android:label="@string/title_activity_compressibility" >
+        </activity>
+        <activity
+            android:name=".Spinner"
+            android:label="@string/title_activity_spinner" >
         </activity>
     </application>
 

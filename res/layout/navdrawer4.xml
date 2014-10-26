@@ -18,35 +18,37 @@
         android:textSize="18sp" />
 
     <Button
+        android:id="@+id/button_waterjet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/impact_title"
+        android:layout_below="@+id/impact_title"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:clickable="true"
+        android:onClick="waterjet"
+        android:text="WaterJet" />
+
+    <Button
         android:id="@+id/button_nozzle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button_waterjet"
         android:layout_below="@+id/button_waterjet"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="36dp"
-        android:background="@null"
+        android:layout_marginTop="15dp"
         android:clickable="true"
         android:onClick="Nozzle"
         android:text="Nozzle" />
 
     <Button
-        android:id="@+id/button_waterjet"
+        android:id="@+id/buttons_spinner"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/button_nozzle"
-        android:layout_centerVertical="true"
-        android:background="@null"
+        android:layout_alignLeft="@+id/button_nozzle"
+        android:layout_below="@+id/button_nozzle"
+        android:layout_marginTop="15dp"
         android:clickable="true"
-        android:onClick="waterjet"
-        android:text="WaterJet" />
-
-    <ImageView
-        android:id="@+id/imageView1"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_alignLeft="@+id/impact_title"
-        android:layout_below="@+id/impact_title"
-        android:layout_marginTop="18dp"
-        android:src="@drawable/womanjet" />
+        android:onClick="spinner"
+        android:text="Spinner" />
 
 </RelativeLayout>

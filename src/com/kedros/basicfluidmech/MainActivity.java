@@ -32,9 +32,7 @@ public class MainActivity extends FragmentActivity {
 			"com.kedros.basicfluidmech.NavDrawer3",
 			"com.kedros.basicfluidmech.NavDrawer4",
 			"com.kedros.basicfluidmech.SmallQuiz",
-			"com.kedros.basicfluidmech.NavDrawer5",
-			"com.kedros.basicfluidmech.WaterJet",
-			"com.kedros.basicfluidmech.WaterNozzle" };
+			"com.kedros.basicfluidmech.HelpPage", };
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -221,6 +219,7 @@ public class MainActivity extends FragmentActivity {
 		// .show();
 
 	}
+
 	public void steady(View view) {
 		Intent intent = new Intent(this, Steady.class);
 		startActivity(intent);
@@ -228,6 +227,7 @@ public class MainActivity extends FragmentActivity {
 		// .show();
 
 	}
+
 	public void compressibility(View view) {
 		Intent intent = new Intent(this, Compressibility.class);
 		startActivity(intent);
@@ -235,6 +235,7 @@ public class MainActivity extends FragmentActivity {
 		// .show();
 
 	}
+
 	public void viscosity(View view) {
 		Intent intent = new Intent(this, Viscosity.class);
 		startActivity(intent);
@@ -245,19 +246,19 @@ public class MainActivity extends FragmentActivity {
 
 	// Page of Water Jet//
 	public void waterjet(View view) {
-		FragmentTransaction tx = getSupportFragmentManager().beginTransaction();
-		tx.replace(R.id.main,
-				Fragment.instantiate(MainActivity.this, fragments[6]));
-		tx.commit();
+		Intent intent = new Intent(this, WaterJet.class);
+		startActivity(intent);
+		// Toast.makeText(this, "ImageButton is clicked!", Toast.LENGTH_SHORT)
+		// .show();
 
 	}
 
 	// Page of Water Nozzle//
 	public void Nozzle(View view) {
-		FragmentTransaction tx = getSupportFragmentManager().beginTransaction();
-		tx.replace(R.id.main,
-				Fragment.instantiate(MainActivity.this, fragments[7]));
-		tx.commit();
+		Intent intent = new Intent(this, WaterNozzle.class);
+		startActivity(intent);
+		// Toast.makeText(this, "ImageButton is clicked!", Toast.LENGTH_SHORT)
+		// .show();
 
 	}
 
@@ -266,4 +267,13 @@ public class MainActivity extends FragmentActivity {
 		Intent intent = new Intent(this, WaterDetail.class);
 		startActivity(intent);
 	}
+
+	public void spinner(View view) {
+		Intent intent = new Intent(this, Spinner.class);
+		startActivity(intent);
+		// Toast.makeText(this, "ImageButton is clicked!", Toast.LENGTH_SHORT)
+		// .show();
+
+	}
+
 }

@@ -19,14 +19,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="900dp"
-            android:text="@string/scrolldown" />
+            android:text="Help" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="false"
-            android:text="@string/welcome" />
+            android:text="Help" />
     </RelativeLayout>
 
 </ScrollView>

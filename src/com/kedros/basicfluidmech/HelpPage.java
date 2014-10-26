@@ -7,17 +7,17 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
  
-public class NavDrawer5 extends Fragment {
+public class HelpPage extends Fragment {
  
     public static Fragment newInstance(Context context) {
-    	NavDrawer5 f = new NavDrawer5();
+    	HelpPage f = new HelpPage();
  
         return f;
     }
  
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState) {
-        ViewGroup root = (ViewGroup) inflater.inflate(R.layout.navdrawer5, null);
+        ViewGroup root = (ViewGroup) inflater.inflate(R.layout.helppage, null);
         return root;
     }
  
