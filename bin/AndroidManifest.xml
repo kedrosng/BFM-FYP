@@ -60,6 +60,30 @@
             android:name=".WaterDetail"
             android:label="@string/title_activity_water_detail" >
         </activity>
+        <activity
+            android:name=".SmallQuiz"
+            android:label="@string/title_activity_small_quiz" >
+        </activity>
+        <activity
+            android:name=".TurbulentLaminar"
+            android:label="@string/title_activity_turbulent_laminar" >
+        </activity>
+        <activity
+            android:name=".Uniform"
+            android:label="@string/title_activity_uniform" >
+        </activity>
+        <activity
+            android:name=".Steady"
+            android:label="@string/title_activity_steady" >
+        </activity>
+        <activity
+            android:name=".Viscosity"
+            android:label="@string/title_activity_viscosity" >
+        </activity>
+        <activity
+            android:name=".Compressibility"
+            android:label="@string/title_activity_compressibility" >
+        </activity>
     </application>
 
 </manifest>

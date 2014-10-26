@@ -30,7 +30,7 @@
     <string name="basic_t3">Properties of Fluid</string>
     <string name="basic_c3">Viscocity</string>
     <string name="pipe_title">Type of Flow</string>
-    <string name="pipe_content">In pipes, at values of the Reynolds number above 2000, flow will not necessarily be turbulent. Laminar flow has been maintained up to Re = 50000, but conditions are unstable and any disturbance will cause reversion to normal turbulent flow. In straight pipes of constant diameter, flow can be assumed to be turbulent if the Reynolds number exceeds 4000. You can detemine by using the formula below.</string>
+    <string name="pipe_content">Fluid motions manifest themselves in many different ways. Some can be described very easily, while other require understanding of physical laws. In engineering applications, it is important to describe the fluid motions as simply as can be justified. It is the engineer s responsibility to know which simplifying assumptions can be made.</string>
     <string name="title_activity_rey_formula">ReyFormula</string>
     <string name="reyformula_title">Reynolds Number Calculator</string>
     <string name="reyformula_content">Please input the numbers.</string>
@@ -39,6 +39,12 @@
     <string name="density"><a href="http://www.google.com">Density</a></string>
     <string name="title_activity_water_jet">Water Jet</string>
     <string name="title_activity_water_nozzle">Water Nozzle</string>
-    <string name="title_activity_water_detail">WaterDetail</string>
+    <string name="title_activity_water_detail">More Detail about Fluid</string>
+    <string name="title_activity_small_quiz">Small Quiz</string>
+    <string name="title_activity_turbulent_laminar">Turbulent and Laminar Flow</string>
+    <string name="title_activity_uniform">Uniform</string>
+    <string name="title_activity_steady">Steady</string>
+    <string name="title_activity_viscosity">Viscosity</string>
+    <string name="title_activity_compressibility">Compressibility</string>
 
 </resources>

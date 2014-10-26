@@ -29,20 +29,65 @@
         android:text="@string/pipe_content"
         android:textSize="16sp" />
 
-    <ImageButton
-        android:id="@+id/reyformula"
+    <Button
+        android:id="@+id/button_uni"
+        style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pipe_content"
         android:layout_below="@+id/pipe_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="12dp"
-        android:background="@null"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="19dp"
+        android:text="Uniform vs Non-Uniform"
         android:clickable="true"
-        android:maxWidth="150dp"
-        android:onClick="onClick"
-        android:scaleType="matrix"
-        android:src="@drawable/rey_formula" />
+        android:onClick="uniform" />
 
-    
+    <Button
+        android:id="@+id/button_steady"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button_uni"
+        android:layout_below="@+id/button_uni"
+        android:layout_marginTop="10dp"
+        android:text="Steady vs Unsteady"
+        android:clickable="true"
+        android:onClick="steady" />
+
+    <Button
+        android:id="@+id/button_viscos"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button_steady"
+        android:layout_below="@+id/button_steady"
+        android:layout_marginTop="10dp"
+        android:text="Viscous vs Inviscid Flow"
+        android:clickable="true"
+        android:onClick="viscosity" />
+
+    <Button
+        android:id="@+id/button_comp"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button_viscos"
+        android:layout_below="@+id/button_viscos"
+        android:layout_marginTop="11dp"
+        android:text="Compressibility"
+        android:clickable="true"
+        android:onClick="compressibility" />
+
+    <Button
+        android:id="@+id/button_tur"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button_comp"
+        android:layout_below="@+id/button_comp"
+        android:layout_marginTop="11dp"
+        android:clickable="true"
+        android:onClick="button_tur"
+        android:text="Turbulent vs Laminar Flow" />
 
 </RelativeLayout>

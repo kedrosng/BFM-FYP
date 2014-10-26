@@ -24,15 +24,15 @@ public class MainActivity extends FragmentActivity {
 	ActionBarDrawerToggle mDrawerToggle;
 
 	String[] data = { "About", "What is Fluid", "Type of Flow", "Impact Force",
-			"Help"
+			"Quiz", "Help"
 
 	};
 	String[] fragments = { "com.kedros.basicfluidmech.NavDrawer1",
 			"com.kedros.basicfluidmech.NavDrawer2",
 			"com.kedros.basicfluidmech.NavDrawer3",
 			"com.kedros.basicfluidmech.NavDrawer4",
+			"com.kedros.basicfluidmech.SmallQuiz",
 			"com.kedros.basicfluidmech.NavDrawer5",
-			"com.kedros.basicfluidmech.ReyFormula",
 			"com.kedros.basicfluidmech.WaterJet",
 			"com.kedros.basicfluidmech.WaterNozzle" };
 
@@ -205,9 +205,39 @@ public class MainActivity extends FragmentActivity {
 
 	}
 
-	public void onClick(View view) {
-		Intent intent = new Intent(this, ReyFormula.class);
-	    startActivity(intent);
+	// NavDrawer 3 Related//
+	public void button_tur(View view) {
+		Intent intent = new Intent(this, TurbulentLaminar.class);
+		startActivity(intent);
+		// Toast.makeText(this, "ImageButton is clicked!", Toast.LENGTH_SHORT)
+		// .show();
+
+	}
+
+	public void uniform(View view) {
+		Intent intent = new Intent(this, Uniform.class);
+		startActivity(intent);
+		// Toast.makeText(this, "ImageButton is clicked!", Toast.LENGTH_SHORT)
+		// .show();
+
+	}
+	public void steady(View view) {
+		Intent intent = new Intent(this, Steady.class);
+		startActivity(intent);
+		// Toast.makeText(this, "ImageButton is clicked!", Toast.LENGTH_SHORT)
+		// .show();
+
+	}
+	public void compressibility(View view) {
+		Intent intent = new Intent(this, Compressibility.class);
+		startActivity(intent);
+		// Toast.makeText(this, "ImageButton is clicked!", Toast.LENGTH_SHORT)
+		// .show();
+
+	}
+	public void viscosity(View view) {
+		Intent intent = new Intent(this, Viscosity.class);
+		startActivity(intent);
 		// Toast.makeText(this, "ImageButton is clicked!", Toast.LENGTH_SHORT)
 		// .show();
 
@@ -230,9 +260,10 @@ public class MainActivity extends FragmentActivity {
 		tx.commit();
 
 	}
-	//Detail of water//
-	public void waterglass (View v) {
- 	   Intent intent = new Intent(this, WaterDetail.class);
- 	    startActivity(intent);
+
+	// Detail of water//
+	public void waterglass(View v) {
+		Intent intent = new Intent(this, WaterDetail.class);
+		startActivity(intent);
 	}
 }
