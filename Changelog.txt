@@ -13,12 +13,12 @@
 20141008  - After two hours fixing, more information added
 			About and Basic Fluid knowledge Added.
 			SplashScreen not fixed
+20141027  -	Update for several pages and added lots of buttons
+			Showing correct or wrong under users choice.
 			
 			
 			
 Features Left:
-1. Formula Page
-2. Calculation Page
 3. Sound and Picture Intergrated
 4. GIF integrated
 		

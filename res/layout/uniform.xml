@@ -9,8 +9,52 @@
     tools:context="com.kedros.basicfluidmech.Uniform" >
 
     <TextView
+        android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Uniform" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="What is the different between Uniform and Non-Uniform Flow?" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="58dp"
+        android:clickable="true"
+        android:onClick="uniformimg"
+        android:src="@drawable/uniformflow" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="39dp"
+        android:layout_toRightOf="@+id/imageView1"
+        android:clickable="true"
+        android:onClick="nonuniformimg"
+        android:src="@drawable/nonuniformflow" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="22dp"
+        android:text="Velocity is constant along the streamline in Uniform Flow while velocity changes along streamline for Non-Uniform Flow. Which one do you think is uniform flow ?" />
+
+    <TextView
+        android:id="@+id/uniformanswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginTop="24dp"
+        android:text="The Answer is : " />
 
 </RelativeLayout>

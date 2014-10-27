@@ -1,9 +1,12 @@
 package com.kedros.basicfluidmech;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.TextView;
 
 public class Uniform extends Activity {
 
@@ -11,6 +14,7 @@ public class Uniform extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.uniform);
+
 	}
 
 	@Override
@@ -30,5 +34,15 @@ public class Uniform extends Activity {
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
+	}
+
+	public void uniformimg(View view) {
+		final TextView mTextView = (TextView) findViewById(R.id.uniformanswer);
+		mTextView.setText("You are Correct!");
+	}
+	
+	public void nonuniformimg(View view) {
+		final TextView mTextView = (TextView) findViewById(R.id.uniformanswer);
+		mTextView.setText("You are wrong! This is a non-uniform flow");
 	}
 }
