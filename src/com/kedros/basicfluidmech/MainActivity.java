@@ -134,7 +134,7 @@ public class MainActivity extends FragmentActivity {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		// getMenuInflater().inflate(R.menu.main, menu);
 		MenuInflater inflater = getMenuInflater();
-		inflater.inflate(R.menu.action_icon, menu);
+		inflater.inflate(R.menu.main, menu);
 		return true;
 	}
 
@@ -164,8 +164,8 @@ public class MainActivity extends FragmentActivity {
 
 		switch (item.getItemId()) {
 		// action with ID action_refresh was selected
-		case R.id.action_search:
-			Toast.makeText(this, "Search selected", Toast.LENGTH_SHORT).show();
+		case R.id.action_ver:
+			Toast.makeText(this, "M1.1.0", Toast.LENGTH_SHORT).show();
 			break;
 		// case R.id.action_exit:
 		// Intent startMain = new Intent(Intent.ACTION_MAIN);
