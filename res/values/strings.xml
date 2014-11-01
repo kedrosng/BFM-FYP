@@ -48,5 +48,8 @@
     <string name="title_activity_compressibility">Compressibility</string>
     <string name="title_activity_spinner">Spinner</string>
     <string name="title_activity_water_jet_example">Water Jet Example</string>
+    <string name="pipenozzle">A simple application is to find the force on the nozzle at the outlet of a pipe. Because the fluid is contracted at the nozzle forces are induced in the nozzle. Anything holding the nozzle must be strong enough to withstand these forces</string>
+    <string name="title_activity_water_nozzle_example">Water Nozzle Example</string>
+    <string name="title_activity_nozzle_cal">Water Nozzle Calculator</string>
 
 </resources>

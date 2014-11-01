@@ -1,0 +1,146 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.kedros.basicfluidmech.NozzleCal" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please input number to calculate the Force in X-direction and Y-Direction and also the moment induced on the Water Nozzle." />
+
+    <EditText
+        android:id="@+id/inletdiameter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="42dp"
+        android:ems="10"
+        android:hint="Inlet Diameter"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/inletpressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/inletdiameter"
+        android:layout_below="@+id/inletdiameter"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="Inlet Pressure"
+        android:inputType="numberDecimal" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/outletdiameter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/inletdiameter"
+        android:layout_alignBottom="@+id/inletdiameter"
+        android:layout_marginLeft="58dp"
+        android:layout_toRightOf="@+id/inletdiameter"
+        android:ems="10"
+        android:hint="Outlet Diameter"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/outletvelocity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/inletpressure"
+        android:layout_alignBottom="@+id/inletpressure"
+        android:layout_alignLeft="@+id/outletdiameter"
+        android:ems="10"
+        android:hint="Outlet Velocity"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/fluiddensity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inletpressure"
+        android:layout_marginTop="15dp"
+        android:layout_toLeftOf="@+id/outletdiameter"
+        android:ems="10"
+        android:hint="Fluid Density"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/distx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/fluiddensity"
+        android:layout_alignBottom="@+id/fluiddensity"
+        android:layout_alignLeft="@+id/outletvelocity"
+        android:ems="10"
+        android:hint="Nozzle Distance to X-Axis"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/disty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/distx"
+        android:layout_below="@+id/distx"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:hint="Nozzle Distance to Y-Axis"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/flowrate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fluiddensity"
+        android:layout_below="@+id/disty"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="72dp"
+        android:text="Flow Rate =" />
+
+    <TextView
+        android:id="@+id/forcex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fluiddensity"
+        android:layout_below="@+id/flowrate"
+        android:layout_marginLeft="29dp"
+        android:text="Fx =" />
+
+    <TextView
+        android:id="@+id/forcey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fluiddensity"
+        android:layout_below="@+id/forcex"
+        android:layout_marginLeft="29dp"
+        android:text="Fy =" />
+
+    <TextView
+        android:id="@+id/momentoutput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fluiddensity"
+        android:layout_below="@+id/forcey"
+        android:layout_marginLeft="29dp"
+        android:text="Moment = Fx * Dist-X + Fy * Dist-Y" />
+
+    <Button
+        android:id="@+id/nozzlecal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fluiddensity"
+        android:layout_alignTop="@+id/disty"
+        android:layout_marginTop="28dp"
+        android:clickable="true"
+        android:onClick="nozzlecala"
+        android:text="Calculate" />
+
+</RelativeLayout>

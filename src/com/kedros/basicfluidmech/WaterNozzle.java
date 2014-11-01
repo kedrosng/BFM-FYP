@@ -1,9 +1,11 @@
 package com.kedros.basicfluidmech;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 public class WaterNozzle extends Activity {
 
@@ -30,5 +32,10 @@ public class WaterNozzle extends Activity {
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
+	}
+
+	public void waternozzleexample(View v) {
+		Intent intent = new Intent(this, WaterNozzleExample.class);
+		startActivity(intent);
 	}
 }

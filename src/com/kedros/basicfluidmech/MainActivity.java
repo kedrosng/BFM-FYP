@@ -183,26 +183,6 @@ public class MainActivity extends FragmentActivity {
 
 	// manage button clicked//
 
-	// Reynolds Number Calculation//
-	public void reyCalculate(View view) {
-		EditText number1 = (EditText) findViewById(R.id.rey_density);
-		EditText number2 = (EditText) findViewById(R.id.rey_velocity);
-		EditText number3 = (EditText) findViewById(R.id.rey_dia);
-		EditText number4 = (EditText) findViewById(R.id.rey_viscosity);
-		EditText reyresult = (EditText) findViewById(R.id.rey_answer);
-
-		float result = Float.parseFloat(number1.getText().toString())
-				* Float.parseFloat(number2.getText().toString())
-				* Float.parseFloat(number3.getText().toString())
-				/ Float.parseFloat(number4.getText().toString());
-		reyresult.setText("Reynolds Number is" + " " + Float.toString(result));
-
-		// Toast.makeText(this, "Calculate Button is clicked!",
-		// Toast.LENGTH_SHORT)
-		// .show();
-
-	}
-
 	// NavDrawer 3 Related//
 	public void button_tur(View view) {
 		Intent intent = new Intent(this, TurbulentLaminar.class);

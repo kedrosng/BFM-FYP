@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.kedros.basicfluidmech"
-    android:versionCode="4"
-    android:versionName="M1.2.0" >
+    android:versionCode="5"
+    android:versionName="M1.3.0" >
 
     <uses-sdk
         android:minSdkVersion="16"
@@ -91,6 +91,14 @@
         <activity
             android:name=".WaterJetExample"
             android:label="@string/title_activity_water_jet_example" >
+        </activity>
+        <activity
+            android:name=".WaterNozzleExample"
+            android:label="@string/title_activity_water_nozzle_example" >
+        </activity>
+        <activity
+            android:name=".NozzleCal"
+            android:label="@string/title_activity_nozzle_cal" >
         </activity>
     </application>
 
