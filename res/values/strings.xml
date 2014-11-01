@@ -47,5 +47,6 @@
     <string name="title_activity_viscosity">Viscosity</string>
     <string name="title_activity_compressibility">Compressibility</string>
     <string name="title_activity_spinner">Spinner</string>
+    <string name="title_activity_water_jet_example">Water Jet Example</string>
 
 </resources>

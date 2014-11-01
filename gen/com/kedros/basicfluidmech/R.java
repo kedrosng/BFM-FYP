@@ -1086,22 +1086,24 @@ containing a value of this type.
         public static final int ic_drawer=0x7f02005c;
         public static final int ic_launcher=0x7f02005d;
         public static final int impactforce=0x7f02005e;
-        public static final int nonuniformflow=0x7f02005f;
-        public static final int rey_formula=0x7f020060;
-        public static final int splash_icon=0x7f020061;
-        public static final int steadyformula=0x7f020062;
-        public static final int steadynonsteady=0x7f020063;
-        public static final int uniformflow=0x7f020064;
-        public static final int unnamed=0x7f020065;
-        public static final int waterglass=0x7f020066;
-        public static final int womanjet=0x7f020067;
+        public static final int injet=0x7f02005f;
+        public static final int injetflow=0x7f020060;
+        public static final int nonuniformflow=0x7f020061;
+        public static final int rey_formula=0x7f020062;
+        public static final int splash_icon=0x7f020063;
+        public static final int steadyformula=0x7f020064;
+        public static final int steadynonsteady=0x7f020065;
+        public static final int uniformflow=0x7f020066;
+        public static final int unnamed=0x7f020067;
+        public static final int waterglass=0x7f020068;
+        public static final int womanjet=0x7f020069;
     }
     public static final class id {
         public static final int ScrollView01=0x7f050045;
         public static final int Tempreture=0x7f050070;
         public static final int TextView01=0x7f050043;
         public static final int TextView02=0x7f050044;
-        public static final int action_back=0x7f050074;
+        public static final int action_back=0x7f050079;
         public static final int action_bar=0x7f05001c;
         public static final int action_bar_activity_content=0x7f050015;
         public static final int action_bar_container=0x7f05001b;
@@ -1113,12 +1115,14 @@ containing a value of this type.
         public static final int action_menu_divider=0x7f050016;
         public static final int action_menu_presenter=0x7f050017;
         public static final int action_mode_close_button=0x7f050024;
-        public static final int action_search=0x7f050073;
-        public static final int action_settings=0x7f050075;
-        public static final int action_ver=0x7f050076;
+        public static final int action_search=0x7f050078;
+        public static final int action_settings=0x7f05007a;
+        public static final int action_ver=0x7f05007b;
         public static final int activity_chooser_view_content=0x7f050025;
         public static final int adtheme=0x7f050041;
         public static final int always=0x7f05000b;
+        public static final int answera=0x7f050074;
+        public static final int answerb=0x7f050075;
         public static final int basic_c1=0x7f050049;
         public static final int basic_c2=0x7f05004b;
         public static final int basic_t1=0x7f050048;
@@ -1139,6 +1143,8 @@ containing a value of this type.
         public static final int button_waterjet=0x7f05005b;
         public static final int buttons_spinner=0x7f05005d;
         public static final int calculate_button=0x7f050064;
+        public static final int checkBox1=0x7f050077;
+        public static final int checkBox2=0x7f050076;
         public static final int checkbox=0x7f05002d;
         public static final int collapseActionView=0x7f05000d;
         public static final int default_activity_button=0x7f050028;
@@ -1213,6 +1219,7 @@ containing a value of this type.
         public static final int vis_ans=0x7f05006d;
         public static final int viscosity=0x7f05004f;
         public static final int waterglass=0x7f050052;
+        public static final int waterjet_example=0x7f050073;
         public static final int welcome_content=0x7f050047;
         public static final int welcome_page=0x7f050046;
         public static final int withText=0x7f05000c;
@@ -1290,7 +1297,8 @@ containing a value of this type.
         public static final int viscosity=0x7f03002c;
         public static final int waterdetail=0x7f03002d;
         public static final int waterjet=0x7f03002e;
-        public static final int waternozzle=0x7f03002f;
+        public static final int waterjet_example=0x7f03002f;
+        public static final int waternozzle=0x7f030030;
     }
     public static final class menu {
         public static final int action_icon=0x7f0c0000;
@@ -1308,7 +1316,8 @@ containing a value of this type.
         public static final int viscosity=0x7f0c000c;
         public static final int water_detail=0x7f0c000d;
         public static final int water_jet=0x7f0c000e;
-        public static final int water_nozzle=0x7f0c000f;
+        public static final int water_jet_example=0x7f0c000f;
+        public static final int water_nozzle=0x7f0c0010;
     }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
@@ -1389,6 +1398,7 @@ containing a value of this type.
         public static final int title_activity_viscosity=0x7f0a0035;
         public static final int title_activity_water_detail=0x7f0a0030;
         public static final int title_activity_water_jet=0x7f0a002e;
+        public static final int title_activity_water_jet_example=0x7f0a0038;
         public static final int title_activity_water_nozzle=0x7f0a002f;
         public static final int title_section2=0x7f0a001c;
         public static final int title_section3=0x7f0a001d;
