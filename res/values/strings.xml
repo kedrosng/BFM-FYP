@@ -51,5 +51,7 @@
     <string name="pipenozzle">A simple application is to find the force on the nozzle at the outlet of a pipe. Because the fluid is contracted at the nozzle forces are induced in the nozzle. Anything holding the nozzle must be strong enough to withstand these forces</string>
     <string name="title_activity_water_nozzle_example">Water Nozzle Example</string>
     <string name="title_activity_nozzle_cal">Water Nozzle Calculator</string>
+    <string name="title_activity_spinner_example">Spinner Example</string>
+    <string name="title_activity_spinner_calculator">Spinner Calculator</string>
 
 </resources>

@@ -9,8 +9,42 @@
     tools:context="com.kedros.basicfluidmech.Spinner" >
 
     <TextView
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="23dp"
+        android:text="For another common application is when water enters the rotor, We have to find out the resisting torque to hold the rotor stationary. and find out how fast the rotor spin steadily if the resisting torque is reduced to zero." />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Spinner" />
+
+    <Button
+        android:id="@+id/spinner_example"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginRight="99dp"
+        android:layout_marginTop="67dp"
+        android:text="Example"
+        android:clickable="true"
+        android:onClick="spinnerexample" />
+
+    <ImageView
+        android:id="@+id/spinnerimg"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="54dp"
+        android:src="@drawable/spinnerfig" />
 
 </RelativeLayout>

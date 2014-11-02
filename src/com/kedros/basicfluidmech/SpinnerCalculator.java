@@ -1,24 +1,26 @@
 package com.kedros.basicfluidmech;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
 
-public class Spinner extends Activity {
+public class SpinnerCalculator extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.spinner);
+		setContentView(R.layout.spinner_calculator);
 	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.spinner, menu);
+		getMenuInflater().inflate(R.menu.spinner_calculator, menu);
 		return true;
 	}
 
@@ -33,8 +35,22 @@ public class Spinner extends Activity {
 		}
 		return super.onOptionsItemSelected(item);
 	}
-	public void spinnerexample(View v) {
-		Intent intent = new Intent(this, SpinnerExample.class);
-		startActivity(intent);
+
+	public void sans(View view) {
+		float Q = 0;
+		float jetnum = 0;
+		float jetout = 0;
+		float outangle = 60;
+		float fluidden = 0;
+		float Qjet = 0;
+		float Vjet = 0;
+		float T = 0;
+		float r = 0;
+		float cosangle = 0;
+
+		TextView spinnertor = (TextView) findViewById(R.id.spinner_torque);
+		spinnertor.setText(Float.toString(Qjet));
+		Toast.makeText(this, "Cal is clicked!", Toast.LENGTH_SHORT).show();
+
 	}
 }
