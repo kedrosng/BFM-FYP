@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.kedros.basicfluidmech.Compressibility"
+    android:background="@drawable/bg" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Compressibility" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="12dp"
+        android:text="All fluid are compressible - even water - their density will change as pressure changes. Under steady conditions, and provided that the changes in pressure are small, it is usually possible to simplify analysis of the flow by assuming it is incompressible and has constant density. As you will appreciate, liquids are quite difficult to compress. In some unsteady confitions very high pressure differences can occur and it is necessary to take these into account even for liquids."
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextView01"
+        android:layout_below="@+id/TextView01"
+        android:layout_marginTop="19dp"
+        android:text="More formally an incompressible flow is defined as one in which the density of each fluid particle remains relatively constant as it moves through the flow field. This however does not demand that the density is everywhere constant. If the density is spatially constant, then obviously the flow is incompressible, but that would be a more restrictive condition."
+        android:textSize="16sp" >
+    </TextView>
+
+</RelativeLayout>

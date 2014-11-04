@@ -15,7 +15,7 @@
         android:layout_marginRight="10dp"
         android:layout_marginTop="20dp"
         android:text="@string/welcome"
-        android:textSize="18sp" />
+        android:textSize="22sp" />
 
     <TextView
         android:id="@+id/welcome_content"
@@ -23,20 +23,22 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/welcome_page"
         android:layout_below="@+id/welcome_page"
-        android:layout_marginTop="25dp"
         android:layout_marginRight="10dp"
+        android:layout_marginTop="25dp"
         android:lineSpacingMultiplier="1.25"
         android:text="@string/welcome_content"
-        android:textSize="16sp" >
+        android:textSize="20sp" >
+
     </TextView>
 
     <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/welcome_page"
-        android:layout_toRightOf="@+id/welcome_page"
-        android:text="Normal Screen"
+        android:layout_above="@+id/welcome_content"
+        android:layout_alignRight="@+id/welcome_content"
+        android:layout_marginRight="34dp"
+        android:text="Large Screen"
         android:textAppearance="?android:attr/textAppearanceSmall" />
 
 </RelativeLayout>

@@ -5,6 +5,43 @@
     android:background="@drawable/bg"
     android:orientation="vertical" >
 
+    <TextView
+        android:id="@+id/pipe_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="false"
+        android:layout_centerVertical="false"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/pipe_title"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/pipe_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pipe_title"
+        android:layout_below="@+id/pipe_title"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="25dp"
+        android:lineSpacingMultiplier="1.25"
+        android:text="@string/pipe_content"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/button_uni"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pipe_content"
+        android:layout_below="@+id/pipe_content"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="19dp"
+        android:text="Uniform vs Non-Uniform"
+        android:clickable="true"
+        android:onClick="uniform" />
+
     <Button
         android:id="@+id/button_steady"
         style="?android:attr/buttonStyleSmall"
@@ -13,10 +50,9 @@
         android:layout_alignLeft="@+id/button_uni"
         android:layout_below="@+id/button_uni"
         android:layout_marginTop="10dp"
-        android:clickable="true"
-        android:onClick="steady"
         android:text="Steady vs Unsteady"
-        android:textSize="12dp" />
+        android:clickable="true"
+        android:onClick="steady" />
 
     <Button
         android:id="@+id/button_viscos"
@@ -26,10 +62,9 @@
         android:layout_alignLeft="@+id/button_steady"
         android:layout_below="@+id/button_steady"
         android:layout_marginTop="10dp"
-        android:clickable="true"
-        android:onClick="viscosity"
         android:text="Viscous vs Inviscid Flow"
-        android:textSize="12dp" />
+        android:clickable="true"
+        android:onClick="viscosity" />
 
     <Button
         android:id="@+id/button_comp"
@@ -39,10 +74,9 @@
         android:layout_alignLeft="@+id/button_viscos"
         android:layout_below="@+id/button_viscos"
         android:layout_marginTop="11dp"
-        android:clickable="true"
-        android:onClick="compressibility"
         android:text="Compressibility"
-        android:textSize="12dp" />
+        android:clickable="true"
+        android:onClick="compressibility" />
 
     <Button
         android:id="@+id/button_tur"
@@ -54,42 +88,6 @@
         android:layout_marginTop="11dp"
         android:clickable="true"
         android:onClick="button_tur"
-        android:text="Turbulent vs Laminar Flow"
-        android:textSize="12dp" />
-
-    <TextView
-        android:id="@+id/pipe_content"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/pipe_title"
-        android:layout_below="@+id/pipe_title"
-        android:layout_marginTop="10dp"
-        android:lineSpacingMultiplier="1.25"
-        android:text="@string/pipe_content"
-        android:textSize="14sp" />
-
-    <Button
-        android:id="@+id/button_uni"
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/pipe_content"
-        android:layout_below="@+id/pipe_content"
-        android:layout_marginLeft="15dp"
-        android:clickable="true"
-        android:onClick="uniform"
-        android:text="Uniform vs Non-Uniform"
-        android:textSize="12dp" />
-
-    <TextView
-        android:id="@+id/pipe_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="11dp"
-        android:layout_marginTop="14dp"
-        android:text="@string/pipe_title"
-        android:textSize="16sp" />
+        android:text="Turbulent vs Laminar Flow" />
 
 </RelativeLayout>

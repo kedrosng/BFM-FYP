@@ -8,8 +8,8 @@
     android:scrollbars="none" >
 
     <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" >
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
 
         <TextView
             android:id="@+id/basic_t1"
@@ -147,14 +147,13 @@
 
         <ImageView
             android:id="@+id/waterglass"
-            android:layout_width="150dp"
-            android:layout_height="130dp"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginRight="11dp"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_alignTop="@+id/basic_t3"
+            android:layout_toRightOf="@+id/basic_t2"
+            android:src="@drawable/waterglass"
             android:clickable="true"
-            android:onClick="waterglass"
-            android:src="@drawable/waterglass" />
+            android:onClick="waterglass" />
 
     </RelativeLayout>
 

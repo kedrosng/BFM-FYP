@@ -1,5 +1,6 @@
 package com.kedros.basicfluidmech;
 
+import android.R.string;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -39,17 +40,35 @@ public class SpinnerCalculator extends Activity {
 	public void sans(View view) {
 		float Q = 0;
 		float jetnum = 0;
-		float jetout = 0;
-		float outangle = 60;
+		float outjet = 0;
+		float outangle = 0;
 		float fluidden = 0;
 		float Qjet = 0;
 		float Vjet = 0;
 		float T = 0;
 		float r = 0;
-		float cosangle = 0;
+		double cosangle = 0;
 
 		TextView spinnertor = (TextView) findViewById(R.id.spinner_torque);
-		spinnertor.setText(Float.toString(Qjet));
+		EditText qflow = (EditText) findViewById(R.id.spinnerflowrate);
+		EditText jetnumber = (EditText) findViewById(R.id.jetnumber);
+		EditText outarea = (EditText) findViewById(R.id.jetout);
+		EditText angle = (EditText) findViewById(R.id.editText1);
+		EditText density = (EditText) findViewById(R.id.editText2);
+		EditText nozzlel = (EditText) findViewById(R.id.nozzlelength);
+		Q = Float.parseFloat(qflow.getText().toString());
+		jetnum = Float.parseFloat(jetnumber.getText().toString());
+		outjet = Float.parseFloat(outarea.getText().toString());
+		cosangle = Double.parseDouble(angle.getText().toString());
+		outangle = (float) (Math.cos(Math.toRadians(cosangle)));
+		fluidden = Float.parseFloat(density.getText().toString());
+		r = Float.parseFloat(nozzlel.getText().toString());
+		Qjet = (Q / 1000) / 3;
+		Vjet = Qjet / (outjet /1000000);
+		T = fluidden * Qjet * (Vjet * outangle - 0) * r * jetnum;
+
+		spinnertor.setText("The resisting Torque = " + Float.toString(T));
+
 		Toast.makeText(this, "Cal is clicked!", Toast.LENGTH_SHORT).show();
 
 	}

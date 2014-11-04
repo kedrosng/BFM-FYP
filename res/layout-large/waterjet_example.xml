@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.kedros.basicfluidmech.WaterJetExample" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Question:" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="17dp"
+        android:text="A jet of water 50mm in diameter with a velocity of 18 m/s strikes a smooth flat plate incluned at an angle of 25 degrees to the axis of the jet. Determine the force exerted on the plate (a) when the plate is stationary, (b) when the plate is mobing at 4.5 m/s in the direction of the jet." />
+
+    <EditText
+        android:id="@+id/answera"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:hint="(a)" />
+
+    <EditText
+        android:id="@+id/answerb"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/answera"
+        android:layout_below="@+id/answera"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:hint="(b)" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button1"
+        android:layout_alignLeft="@+id/checkBox1"
+        android:text=""
+        android:focusable="false" />
+
+    <Button
+        android:id="@+id/button1"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/answerb"
+        android:layout_below="@+id/answerb"
+        android:layout_marginTop="33dp"
+        android:clickable="true"
+        android:onClick="checkjetanswer"
+        android:text="Check Answer" />
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/answerb"
+        android:layout_toRightOf="@+id/button1"
+        android:focusable="false" />
+
+</RelativeLayout>

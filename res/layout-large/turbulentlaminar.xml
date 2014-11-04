@@ -6,7 +6,7 @@
     android:orientation="vertical" >
 
     <TextView
-        android:id="@+id/welcome_page"
+        android:id="@+id/pipe_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="false"
@@ -14,29 +14,33 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginTop="20dp"
-        android:text="@string/welcome"
+        android:text="@string/pipe_title"
         android:textSize="18sp" />
 
     <TextView
-        android:id="@+id/welcome_content"
+        android:id="@+id/pipe_content"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/welcome_page"
-        android:layout_below="@+id/welcome_page"
-        android:layout_marginTop="25dp"
+        android:layout_alignLeft="@+id/pipe_title"
+        android:layout_below="@+id/pipe_title"
         android:layout_marginRight="10dp"
+        android:layout_marginTop="25dp"
         android:lineSpacingMultiplier="1.25"
-        android:text="@string/welcome_content"
-        android:textSize="16sp" >
-    </TextView>
+        android:text="@string/pipe_content"
+        android:textSize="16sp" />
 
-    <TextView
-        android:id="@+id/textView1"
+    <ImageButton
+        android:id="@+id/reyformula"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/welcome_page"
-        android:layout_toRightOf="@+id/welcome_page"
-        android:text="Normal Screen"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
+        android:layout_below="@+id/pipe_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:background="@null"
+        android:clickable="true"
+        android:maxWidth="150dp"
+        android:onClick="reyformula"
+        android:scaleType="matrix"
+        android:src="@drawable/rey_formula" />
 
 </RelativeLayout>

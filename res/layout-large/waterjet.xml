@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/impact_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="false"
+        android:layout_centerVertical="false"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Water Jet Impact Force Calculator"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/impact_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/impact_title"
+        android:layout_below="@+id/impact_title"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="25dp"
+        android:lineSpacingMultiplier="1.25"
+        android:text="Formula"
+        android:textSize="16sp" >
+    </TextView>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_alignLeft="@+id/impact_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/impact_content"
+        android:layout_marginTop="22dp"
+        android:src="@drawable/injetflow" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView1"
+        android:layout_marginTop="102dp"
+        android:layout_toRightOf="@+id/impact_content"
+        android:src="@drawable/injet" />
+
+    <Button
+        android:id="@+id/waterjet_example"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView2"
+        android:layout_marginBottom="22dp"
+        android:layout_marginLeft="48dp"
+        android:layout_toRightOf="@+id/imageView2"
+        android:clickable="true"
+        android:onClick="jetexample"
+        android:text="Example" />
+
+</RelativeLayout>

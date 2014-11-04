@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.kedros.basicfluidmech.Viscosity"
+    android:background="@drawable/bg" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Viscosity" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="20dp"
+        android:text="An inviscid flow is one in which viscous effects do not significantly influence the flow and are thus neglected. In a viscous flow the effects of viscosity are important and cannot be ignored." />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="25dp"
+        android:text="To model an inviscid flow analytically, we can simply let the viscosity be zero; this will obviously make all viscous effects zero. It is more difficult to create an inviscid flow experimentally, because all fluids of interest have viscosity." />
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextView01"
+        android:layout_below="@+id/TextView01"
+        android:layout_marginTop="27dp"
+        android:text="Are there flows of interest in which the viscous effects are neliginly small?"
+></TextView>
+
+    <Button
+        android:id="@+id/button_vis_ans"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextView02"
+        android:layout_below="@+id/TextView02"
+        android:layout_marginTop="11dp"
+        android:text="Answer"
+        android:clickable="true"
+        android:onClick="button_vis_ans" />
+
+    <TextView
+        android:id="@+id/vis_ans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button_vis_ans"
+        android:layout_below="@+id/button_vis_ans"
+        android:layout_marginTop="11dp"
+        android:text="" />
+
+</RelativeLayout>

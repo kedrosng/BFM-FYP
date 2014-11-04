@@ -21,7 +21,7 @@
         android:layout_below="@+id/imgLogo"
         android:layout_marginTop="17dp"
         android:gravity="center_horizontal"
-        android:text="ver - P1.0.0 - Phone"
+        android:text="ver - P1.0.0 - Tablet"
         android:textColor="#454545"
         android:textSize="14sp" />
 

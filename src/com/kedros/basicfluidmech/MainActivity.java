@@ -24,14 +24,15 @@ public class MainActivity extends FragmentActivity {
 	ActionBarDrawerToggle mDrawerToggle;
 
 	String[] data = { "About", "What is Fluid", "Type of Flow", "Impact Force",
-			"Quiz", "Help"
+			//"Quiz",
+			"Help"
 
 	};
 	String[] fragments = { "com.kedros.basicfluidmech.NavDrawer1",
 			"com.kedros.basicfluidmech.NavDrawer2",
 			"com.kedros.basicfluidmech.NavDrawer3",
 			"com.kedros.basicfluidmech.NavDrawer4",
-			"com.kedros.basicfluidmech.SmallQuiz",
+			//"com.kedros.basicfluidmech.SmallQuiz",
 			"com.kedros.basicfluidmech.HelpPage", };
 
 	@Override
