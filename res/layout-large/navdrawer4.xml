@@ -15,40 +15,52 @@
         android:layout_marginRight="10dp"
         android:layout_marginTop="20dp"
         android:text="@string/impact_title"
-        android:textSize="18sp" />
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/impact_title"
+        android:layout_below="@+id/impact_title"
+        android:layout_marginTop="28dp"
+        android:textSize="18sp"
+        android:lineSpacingMultiplier="1.5"
+        android:text="The momentum equation relates the sum of the forces acting on a fluid element to its acceleration or rate of change of momentum in the direction of the resultant force. This relationship is, perhaps, when taken with the conservation of mass and the energy equation, the foundation upon which all fluid flow analysis is based. In this section of application. " />
 
     <Button
         android:id="@+id/button_waterjet"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/impact_title"
-        android:layout_below="@+id/impact_title"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="30dp"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="37dp"
         android:clickable="true"
         android:onClick="waterjet"
         android:text="WaterJet" />
 
     <Button
-        android:id="@+id/button_nozzle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/button_waterjet"
-        android:layout_below="@+id/button_waterjet"
-        android:layout_marginTop="15dp"
-        android:clickable="true"
-        android:onClick="Nozzle"
-        android:text="Nozzle" />
-
-    <Button
         android:id="@+id/buttons_spinner"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/button_nozzle"
-        android:layout_below="@+id/button_nozzle"
-        android:layout_marginTop="15dp"
+        android:layout_alignBaseline="@+id/button_nozzle"
+        android:layout_alignBottom="@+id/button_nozzle"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="58dp"
         android:clickable="true"
         android:onClick="spinner"
         android:text="Spinner" />
+
+    <Button
+        android:id="@+id/button_nozzle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button_waterjet"
+        android:layout_alignBottom="@+id/button_waterjet"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@+id/impact_title"
+        android:clickable="true"
+        android:onClick="Nozzle"
+        android:text="Nozzle" />
 
 </RelativeLayout>

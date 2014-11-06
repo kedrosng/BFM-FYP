@@ -1128,9 +1128,9 @@ containing a value of this type.
         public static final int always=0x7f05000b;
         public static final int answera=0x7f05008b;
         public static final int answerb=0x7f05008c;
-        public static final int basic_c1=0x7f050049;
+        public static final int basic_c1=0x7f050047;
         public static final int basic_c2=0x7f05004b;
-        public static final int basic_t1=0x7f050048;
+        public static final int basic_t1=0x7f050046;
         public static final int basic_t2=0x7f05004a;
         public static final int basic_t3=0x7f05004c;
         public static final int beginning=0x7f050011;
@@ -1161,7 +1161,7 @@ containing a value of this type.
         public static final int drawer=0x7f05003f;
         public static final int drawer_layout=0x7f05003d;
         public static final int dropdown=0x7f05000f;
-        public static final int editText1=0x7f050079;
+        public static final int editText1=0x7f050078;
         public static final int editText2=0x7f05007a;
         public static final int edit_query=0x7f050030;
         public static final int end=0x7f050013;
@@ -1183,8 +1183,8 @@ containing a value of this type.
         public static final int impact_title=0x7f05005a;
         public static final int inletdiameter=0x7f05005e;
         public static final int inletpressure=0x7f05005f;
-        public static final int jetnumber=0x7f050077;
-        public static final int jetout=0x7f050078;
+        public static final int jetnumber=0x7f050079;
+        public static final int jetout=0x7f050077;
         public static final int listMode=0x7f050001;
         public static final int list_item=0x7f050029;
         public static final int main=0x7f05003e;
@@ -1196,7 +1196,7 @@ containing a value of this type.
         public static final int nozzlecal=0x7f050069;
         public static final int nozzleexample=0x7f05008f;
         public static final int nozzleinput=0x7f050090;
-        public static final int nozzlelength=0x7f05007c;
+        public static final int nozzlelength=0x7f05007b;
         public static final int outletdiameter=0x7f050060;
         public static final int outletvelocity=0x7f050061;
         public static final int pager=0x7f05003c;
@@ -1228,12 +1228,12 @@ containing a value of this type.
         public static final int showCustom=0x7f050007;
         public static final int showHome=0x7f050004;
         public static final int showTitle=0x7f050006;
-        public static final int spinner_example=0x7f050074;
+        public static final int spinner_example=0x7f050075;
         public static final int spinner_torque=0x7f05007d;
-        public static final int spinneranswer=0x7f05007b;
+        public static final int spinneranswer=0x7f05007c;
         public static final int spinnercal=0x7f05007e;
         public static final int spinnerflowrate=0x7f050076;
-        public static final int spinnerimg=0x7f050075;
+        public static final int spinnerimg=0x7f050074;
         public static final int split_action_bar=0x7f05001e;
         public static final int submit_area=0x7f050039;
         public static final int tabMode=0x7f050002;
@@ -1250,8 +1250,8 @@ containing a value of this type.
         public static final int viscosity=0x7f05004f;
         public static final int waterglass=0x7f050052;
         public static final int waterjet_example=0x7f05008a;
-        public static final int welcome_content=0x7f050047;
-        public static final int welcome_page=0x7f050046;
+        public static final int welcome_content=0x7f050049;
+        public static final int welcome_page=0x7f050048;
         public static final int withText=0x7f05000c;
     }
     public static final class integer {
@@ -1328,11 +1328,15 @@ containing a value of this type.
         public static final int tutorialp3=0x7f03002d;
         public static final int uniform=0x7f03002e;
         public static final int viscosity=0x7f03002f;
-        public static final int waterdetail=0x7f030030;
-        public static final int waterjet=0x7f030031;
-        public static final int waterjet_example=0x7f030032;
-        public static final int waternozzle=0x7f030033;
-        public static final int waternozzleexample=0x7f030034;
+        public static final int waterdensity=0x7f030030;
+        public static final int waterdetail=0x7f030031;
+        public static final int waterjet=0x7f030032;
+        public static final int waterjet_example=0x7f030033;
+        public static final int waternozzle=0x7f030034;
+        public static final int waternozzleexample=0x7f030035;
+        public static final int waterpressure=0x7f030036;
+        public static final int watertension=0x7f030037;
+        public static final int waterviscosity=0x7f030038;
     }
     public static final class menu {
         public static final int action_icon=0x7f0c0000;
@@ -1351,11 +1355,15 @@ containing a value of this type.
         public static final int turbulent_laminar=0x7f0c000d;
         public static final int uniform=0x7f0c000e;
         public static final int viscosity=0x7f0c000f;
-        public static final int water_detail=0x7f0c0010;
-        public static final int water_jet=0x7f0c0011;
-        public static final int water_jet_example=0x7f0c0012;
-        public static final int water_nozzle=0x7f0c0013;
-        public static final int water_nozzle_example=0x7f0c0014;
+        public static final int water_density=0x7f0c0010;
+        public static final int water_detail=0x7f0c0011;
+        public static final int water_jet=0x7f0c0012;
+        public static final int water_jet_example=0x7f0c0013;
+        public static final int water_nozzle=0x7f0c0014;
+        public static final int water_nozzle_example=0x7f0c0015;
+        public static final int water_pressure=0x7f0c0016;
+        public static final int water_temp=0x7f0c0017;
+        public static final int water_viscosity=0x7f0c0018;
     }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
@@ -1438,11 +1446,15 @@ containing a value of this type.
         public static final int title_activity_turbulent_laminar=0x7f0a0032;
         public static final int title_activity_uniform=0x7f0a0033;
         public static final int title_activity_viscosity=0x7f0a0035;
+        public static final int title_activity_water_density=0x7f0a003e;
         public static final int title_activity_water_detail=0x7f0a0030;
         public static final int title_activity_water_jet=0x7f0a002e;
         public static final int title_activity_water_jet_example=0x7f0a0038;
         public static final int title_activity_water_nozzle=0x7f0a002f;
         public static final int title_activity_water_nozzle_example=0x7f0a003a;
+        public static final int title_activity_water_pressure=0x7f0a0041;
+        public static final int title_activity_water_temp=0x7f0a0040;
+        public static final int title_activity_water_viscosity=0x7f0a003f;
         public static final int title_section2=0x7f0a001c;
         public static final int title_section3=0x7f0a001d;
         public static final int welcome=0x7f0a000d;

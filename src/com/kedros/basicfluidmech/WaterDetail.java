@@ -34,4 +34,33 @@ public class WaterDetail extends Activity {
 		}
 		return super.onOptionsItemSelected(item);
 	}
+
+	public void waterdensity(View view) {
+		Intent intent = new Intent(this, WaterDensity.class);
+		startActivity(intent);
+		// Toast.makeText(this, "ImageButton is clicked!", Toast.LENGTH_SHORT)
+		// .show();
+
+	}
+	public void waterviscosity(View view) {
+		Intent intent = new Intent(this, WaterViscosity.class);
+		startActivity(intent);
+		// Toast.makeText(this, "ImageButton is clicked!", Toast.LENGTH_SHORT)
+		// .show();
+
+	}
+	public void watertemp(View view) {
+		Intent intent = new Intent(this, WaterTension.class);
+		startActivity(intent);
+		// Toast.makeText(this, "ImageButton is clicked!", Toast.LENGTH_SHORT)
+		// .show();
+
+	}
+	public void waterpressure(View view) {
+		Intent intent = new Intent(this, WaterPressure.class);
+		startActivity(intent);
+		// Toast.makeText(this, "ImageButton is clicked!", Toast.LENGTH_SHORT)
+		// .show();
+
+	}
 }

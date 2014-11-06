@@ -6,23 +6,27 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.kedros.basicfluidmech.WaterNozzleExample" >
+    tools:context="com.kedros.basicfluidmech.WaterNozzleExample"
+    
+     >
 
     <ImageView
         android:id="@+id/imageView1"
-        android:layout_width="500dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="31dp"
+        android:layout_width="250dp"
+        android:layout_height="300dp"
+        android:layout_alignLeft="@+id/imageView2"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginTop="26dp"
         android:src="@drawable/waternozzleexample" />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="500dp"
-        android:layout_height="150dp"
-        android:layout_above="@+id/imageView1"
-        android:layout_alignLeft="@+id/imageView1"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="20dp"
         android:src="@drawable/waterq6" />
 
     <Button
@@ -30,10 +34,9 @@
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/imageView1"
-        android:layout_alignRight="@+id/imageView1"
-        android:layout_marginBottom="114dp"
-        android:layout_marginRight="53dp"
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginLeft="14dp"
         android:clickable="true"
         android:onClick="nozzleinput"
         android:text="Input Your Numbers" />

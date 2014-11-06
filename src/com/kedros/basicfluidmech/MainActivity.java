@@ -25,7 +25,7 @@ public class MainActivity extends FragmentActivity {
 
 	String[] data = { "About", "What is Fluid", "Type of Flow", "Impact Force",
 			//"Quiz",
-			"Help"
+			"Contact"
 
 	};
 	String[] fragments = { "com.kedros.basicfluidmech.NavDrawer1",

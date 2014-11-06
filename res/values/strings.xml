@@ -53,5 +53,9 @@
     <string name="title_activity_nozzle_cal">Water Nozzle Calculator</string>
     <string name="title_activity_spinner_example">Spinner Example</string>
     <string name="title_activity_spinner_calculator">Spinner Calculator</string>
+    <string name="title_activity_water_density">Density</string>
+    <string name="title_activity_water_viscosity">Viscosity</string>
+    <string name="title_activity_water_temp">Tempreture</string>
+    <string name="title_activity_water_pressure">Pressure</string>
 
 </resources>

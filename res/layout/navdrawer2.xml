@@ -123,7 +123,7 @@
                     android:id="@+id/temperature"
                     android:layout_width="wrap_content"
                     android:layout_column="2"
-                    android:text=" Temperature"
+                    android:text=" Surface Tension"
                     android:textSize="16sp" >
                 </TextView>
             </TableRow>
@@ -139,7 +139,7 @@
                     android:id="@+id/pressure"
                     android:layout_width="wrap_content"
                     android:layout_column="2"
-                    android:text=" Pressure"
+                    android:text="Pressure"
                     android:textSize="16sp" >
                 </TextView>
             </TableRow>

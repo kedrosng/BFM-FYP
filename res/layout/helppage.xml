@@ -7,26 +7,38 @@
     android:scrollbarAlwaysDrawVerticalTrack="false"
     android:scrollbars="none" >
 
-    <RelativeLayout
+   <RelativeLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingBottom="@dimen/activity_vertical_margin"
-        android:paddingLeft="@dimen/activity_horizontal_margin"
-        android:paddingRight="@dimen/activity_horizontal_margin"
-        android:paddingTop="@dimen/activity_vertical_margin" >
+        android:layout_height="wrap_content" >
 
         <TextView
+            android:id="@+id/basic_t1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="900dp"
-            android:text="Help" />
+            android:layout_centerHorizontal="false"
+            android:layout_centerVertical="false"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:text="Contact and Suggestions"
+            android:textSize="16sp" />
 
         <TextView
+            android:id="@+id/basic_c1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="false"
-            android:text="Help" />
+            android:layout_alignLeft="@+id/basic_t1"
+            android:layout_below="@+id/basic_t1"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="25dp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="This is an application for my university Final Year Project. Maybe some information are missing in this application and not fully covered all details. If you have any comments or suggestion about this app. Please feel free to send me an email, kedrosng@gmail.com. Or leave a comment in the play store comment section"
+            android:textSize="16sp" />
+
+        
+
+        
+
     </RelativeLayout>
 
 </ScrollView>

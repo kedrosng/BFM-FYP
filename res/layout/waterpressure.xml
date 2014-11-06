@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.kedros.basicfluidmech.WaterPressure"
+    android:background="@drawable/bg" >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pressure" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="17dp"
+        android:lineSpacingMultiplier="1.25"
+        android:text="A fluid will exert a force normal to a solid boundary or any plane drawn through the fluid. Since problems may involve bodies of fluids of indefinite extent and, in many cases, the magnitude of the force exerted on a small area of the boundary or plane may vary from place to place, it is convenient to work in terms of the pressure p of the fluid, defined as the force exerted per unit area." />
+
+</RelativeLayout>

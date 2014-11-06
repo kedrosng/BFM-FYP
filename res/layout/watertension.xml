@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.kedros.basicfluidmech.WaterTension"
+    android:background="@drawable/bg" >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Surface Tension" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="14dp"
+        android:lineSpacingMultiplier="1.25"
+        android:text="Surface tension is a property of liquids which is felt at the einterface between the liquid and another fluid. Surface tension has dimensions of force per unit length, and always acts parallel to the interface. Surface molecules are subject to an attractive force from nearby surface molecules so that the surface is in a state of tensio. A soap bubble is a good example to illustrate the effects of surface tension." />
+
+</RelativeLayout>

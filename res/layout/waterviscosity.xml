@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.kedros.basicfluidmech.WaterViscosity"
+    android:background="@drawable/bg" >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Viscosity" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="16dp"
+        android:lineSpacingMultiplier="1.25"
+        android:text="A fluid at rest cannot resist shearing forces, and, if such forces act on a fluid which is in contact with a solid boundary, the fluid will flow over the boundary in such a way that the particles immediately in contact with the boundary have the same velocity as the boundary, while successive layers of fluid parallel to the boundary move with increasing velocities. Shear stresses opposing the relative motion of these layers are set up, their magnitude depending on the velocity gradient from layer to layer." />
+
+</RelativeLayout>
