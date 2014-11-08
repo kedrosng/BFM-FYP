@@ -14,8 +14,8 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginTop="20dp"
-        android:text="@string/pipe_title"
-        android:textSize="18sp" />
+        android:text="Turbulent vs Laminar Flow"
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/pipe_content"
@@ -42,5 +42,14 @@
         android:onClick="reyformula"
         android:scaleType="matrix"
         android:src="@drawable/rey_formula" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reyformula"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:text="Try to Press the Formula !" />
 
 </RelativeLayout>

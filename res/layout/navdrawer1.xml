@@ -30,13 +30,4 @@
         android:textSize="16sp" >
     </TextView>
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/welcome_page"
-        android:layout_toRightOf="@+id/welcome_page"
-        android:text="Normal Screen"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
-
 </RelativeLayout>
