@@ -15,7 +15,7 @@
         android:layout_marginRight="10dp"
         android:layout_marginTop="20dp"
         android:text="Turbulent vs Laminar Flow"
-        android:textSize="18sp" />
+        android:textSize="14sp" />
 
     <TextView
         android:id="@+id/pipe_content"
@@ -27,7 +27,7 @@
         android:layout_marginTop="25dp"
         android:lineSpacingMultiplier="1.25"
         android:text="@string/pipe_content"
-        android:textSize="16sp" />
+        android:textSize="14sp" />
 
     <ImageButton
         android:id="@+id/reyformula"

@@ -8,35 +8,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.kedros.basicfluidmech.Spinner" >
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView1"
-        android:layout_below="@+id/textView1"
-        android:layout_marginTop="23dp"
-        android:text="For another common application is when water enters the rotor, We have to find out the resisting torque to hold the rotor stationary. and find out how fast the rotor spin steadily if the resisting torque is reduced to zero." />
-
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:text="Spinner" />
-
-    <Button
-        android:id="@+id/spinner_example"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/textView2"
-        android:layout_below="@+id/textView2"
-        android:layout_marginRight="99dp"
-        android:layout_marginTop="67dp"
-        android:text="Example"
-        android:clickable="true"
-        android:onClick="spinnerexample" />
-
     <ImageView
         android:id="@+id/spinnerimg"
         android:layout_width="300dp"
@@ -46,5 +17,27 @@
         android:layout_marginLeft="13dp"
         android:layout_marginTop="54dp"
         android:src="@drawable/spinnerfig" />
+
+    <Button
+        android:id="@+id/spinner_example"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/spinnerimg"
+        android:layout_marginBottom="39dp"
+        android:layout_toRightOf="@+id/spinnerimg"
+        android:clickable="true"
+        android:onClick="spinnerexample"
+        android:text="Example" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:lineSpacingMultiplier="1.5"
+        android:text="For another common application is when water enters the rotor, We have to find out the resisting torque to hold the rotor stationary. and find out how fast the rotor spin steadily if the resisting torque is reduced to zero."
+        android:textSize="18dp" />
 
 </RelativeLayout>

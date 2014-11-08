@@ -10,18 +10,11 @@
     android:background="@drawable/bg" >
 
     <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Viscosity" />
-
-    <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView1"
-        android:layout_below="@+id/textView1"
         android:layout_marginTop="20dp"
+        android:textSize="18dp"
         android:text="An inviscid flow is one in which viscous effects do not significantly influence the flow and are thus neglected. In a viscous flow the effects of viscosity are important and cannot be ignored." />
 
     <TextView
@@ -31,6 +24,7 @@
         android:layout_alignLeft="@+id/textView2"
         android:layout_below="@+id/textView2"
         android:layout_marginTop="25dp"
+        android:textSize="18dp"
         android:text="To model an inviscid flow analytically, we can simply let the viscosity be zero; this will obviously make all viscous effects zero. It is more difficult to create an inviscid flow experimentally, because all fluids of interest have viscosity." />
 
     <TextView
@@ -40,6 +34,7 @@
         android:layout_alignLeft="@+id/TextView01"
         android:layout_below="@+id/TextView01"
         android:layout_marginTop="27dp"
+        android:textSize="18dp"
         android:text="Are there flows of interest in which the viscous effects are neliginly small?"
 ></TextView>
 
@@ -62,6 +57,7 @@
         android:layout_alignLeft="@+id/button_vis_ans"
         android:layout_below="@+id/button_vis_ans"
         android:layout_marginTop="11dp"
+        android:textSize="18dp"
         android:text="" />
 
 </RelativeLayout>

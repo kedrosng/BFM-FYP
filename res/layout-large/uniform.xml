@@ -6,7 +6,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.kedros.basicfluidmech.Uniform" >
+    tools:context="com.kedros.basicfluidmech.Uniform"
+    android:background="@drawable/bg" >
 
     <TextView
         android:id="@+id/textView1"
@@ -14,30 +15,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:text="What is the different between Uniform and Non-Uniform Flow?" />
-
-    <ImageView
-        android:id="@+id/imageView1"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView2"
-        android:layout_below="@+id/textView2"
-        android:layout_marginTop="58dp"
-        android:clickable="true"
-        android:onClick="uniformimg"
-        android:src="@drawable/uniformflow" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView2"
-        android:layout_marginLeft="27dp"
-        android:layout_marginTop="39dp"
-        android:layout_toRightOf="@+id/imageView1"
-        android:clickable="true"
-        android:onClick="nonuniformimg"
-        android:src="@drawable/nonuniformflow" />
+        android:text="What is the different between Uniform and Non-Uniform Flow?"
+        android:textSize="18dp" />
 
     <TextView
         android:id="@+id/textView2"
@@ -46,7 +25,8 @@
         android:layout_alignLeft="@+id/textView1"
         android:layout_below="@+id/textView1"
         android:layout_marginTop="22dp"
-        android:text="Velocity is constant along the streamline in Uniform Flow while velocity changes along streamline for Non-Uniform Flow. Which one do you think is uniform flow ?" />
+        android:text="Velocity is constant along the streamline in Uniform Flow while velocity changes along streamline for Non-Uniform Flow. Which one do you think is uniform flow ?"
+        android:textSize="18dp" />
 
     <TextView
         android:id="@+id/uniformanswer"
@@ -55,6 +35,31 @@
         android:layout_alignLeft="@+id/imageView1"
         android:layout_below="@+id/imageView2"
         android:layout_marginTop="24dp"
-        android:text="The Answer is : " />
+        android:text="The Answer is : "
+        android:textSize="18dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_below="@+id/textView2"
+        android:layout_marginRight="44dp"
+        android:layout_marginTop="39dp"
+        android:clickable="true"
+        android:onClick="nonuniformimg"
+        android:src="@drawable/nonuniformflow" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView2"
+        android:layout_marginBottom="32dp"
+        android:layout_marginRight="63dp"
+        android:layout_toLeftOf="@+id/imageView2"
+        android:clickable="true"
+        android:onClick="uniformimg"
+        android:src="@drawable/uniformflow" />
 
 </RelativeLayout>

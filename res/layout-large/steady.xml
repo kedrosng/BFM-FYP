@@ -15,6 +15,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
+        android:textSize="18dp"
         android:text="For steady flow, streamline patterns are not changing over time which could be represent by the following formula" />
 
     <ImageView
@@ -33,6 +34,7 @@
         android:layout_alignLeft="@+id/TextView01"
         android:layout_below="@+id/imageView1"
         android:layout_marginTop="20dp"
+        android:textSize="18dp"
         android:text="For unsteady flow, velocity at a point on a streamline changes over time." />
 
     <ImageView

@@ -26,7 +26,7 @@
             android:layout_marginRight="10dp"
             android:layout_marginTop="20dp"
             android:text="@string/reyformula_title"
-            android:textSize="18sp" />
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/rey_content"
@@ -38,22 +38,8 @@
             android:layout_marginTop="25dp"
             android:lineSpacingMultiplier="1.25"
             android:text="@string/reyformula_content"
-            android:textSize="16sp" >
+            android:textSize="14sp" >
         </TextView>
-
-        <EditText
-            android:id="@+id/rey_density"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/rey_content"
-            android:layout_below="@+id/rey_content"
-            android:layout_marginTop="21dp"
-            android:ems="10"
-            android:hint="Fluid Density"
-            android:inputType="numberDecimal" >
-
-            <requestFocus />
-        </EditText>
 
         <EditText
             android:id="@+id/rey_velocity"
@@ -118,6 +104,18 @@
             android:layout_marginTop="27dp"
             android:ems="20"
             android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/rey_density"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/rey_answer"
+            android:layout_below="@+id/rey_content"
+            android:layout_marginTop="22dp"
+            android:ems="10"
+            android:hint="Fluid Density"
+            android:inputType="numberDecimal" />
+
     </RelativeLayout>
 
 </ScrollView>

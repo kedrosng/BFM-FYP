@@ -13,7 +13,9 @@
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="5 liters/s of water enters the rotor as shown in figure along the axis of rotation which is vertical. The cross section area of each of the three nozzle exits normal to the relative velocity is 18 mm^2. The angle is 60 degrees. How large is the resisting torque required to hold the rotor stationary?" />
+        android:text="5 liters/s of water enters the rotor as shown in figure along the axis of rotation which is vertical. The cross section area of each of the three nozzle exits normal to the relative velocity is 18 mm^2. The angle is 60 degrees. How large is the resisting torque required to hold the rotor stationary?"
+        android:textSize="18dp"
+        android:lineSpacingMultiplier="1.5" />
 
     <ImageView
         android:id="@+id/imageView1"

@@ -13,7 +13,8 @@
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="SpinnerCalculator" />
+        android:text="Please input the relevant numbers inside the blanks."
+        android:textSize="18dp" />
 
     <EditText
         android:id="@+id/spinnerflowrate"
@@ -103,6 +104,7 @@
         android:layout_alignBottom="@+id/spinneranswer"
         android:layout_alignLeft="@+id/editText2"
         android:layout_marginLeft="14dp"
+        android:textSize="18dp"
         android:text="The Resisting Torque = " />
 
 </RelativeLayout>

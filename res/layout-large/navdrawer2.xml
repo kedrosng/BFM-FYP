@@ -33,7 +33,7 @@
             android:layout_marginTop="25dp"
             android:lineSpacingMultiplier="1.25"
             android:text="@string/basic_c1"
-            android:textSize="16sp" />
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/basic_t2"
@@ -56,7 +56,7 @@
             android:layout_marginTop="25dp"
             android:lineSpacingMultiplier="1.25"
             android:text="@string/basic_c2"
-            android:textSize="16sp" />
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/basic_t3"

@@ -90,6 +90,6 @@
         android:layout_marginLeft="11dp"
         android:layout_marginTop="14dp"
         android:text="@string/pipe_title"
-        android:textSize="16sp" />
+        android:textSize="14sp" />
 
 </RelativeLayout>

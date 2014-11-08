@@ -21,7 +21,7 @@
             android:layout_marginRight="10dp"
             android:layout_marginTop="20dp"
             android:text="Contact and Suggestions"
-            android:textSize="16sp" />
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/basic_c1"
@@ -33,7 +33,7 @@
             android:layout_marginTop="25dp"
             android:lineSpacingMultiplier="1.5"
             android:text="This is an application for my university Final Year Project. Maybe some information are missing in this application and not fully covered all details. If you have any comments or suggestion about this app. Please feel free to send me an email, kedrosng@gmail.com. Or leave a comment in the play store comment section"
-            android:textSize="16sp" />
+            android:textSize="14sp" />
 
         
 

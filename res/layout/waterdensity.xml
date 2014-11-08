@@ -10,19 +10,12 @@
     android:background="@drawable/bg" >
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Density" />
-
-    <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView2"
-        android:layout_below="@+id/textView2"
         android:layout_marginTop="18dp"
         android:lineSpacingMultiplier="1.25"
-        android:text="Density is defined as mass per unit volume. The reciprocal of density is the specific volume. The relative density or specific gravity of a substance is the ratio of its density to density of water at 4 deg celcius. (100kg/cubic meters). The weight of a unit volume of a substance is called specific weight." />
+        android:text="Density is defined as mass per unit volume. The reciprocal of density is the specific volume. The relative density or specific gravity of a substance is the ratio of its density to density of water at 4 deg celcius. (100kg/cubic meters). The weight of a unit volume of a substance is called specific weight."
+        android:textSize="14sp" />
 
 </RelativeLayout>

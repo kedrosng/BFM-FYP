@@ -14,7 +14,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:text="Question:" />
+        android:text="Question:"
+        android:textSize="14sp" />
 
     <TextView
         android:id="@+id/textView2"
@@ -23,7 +24,8 @@
         android:layout_alignLeft="@+id/textView1"
         android:layout_below="@+id/textView1"
         android:layout_marginTop="17dp"
-        android:text="A jet of water 50mm in diameter with a velocity of 18 m/s strikes a smooth flat plate incluned at an angle of 25 degrees to the axis of the jet. Determine the force exerted on the plate (a) when the plate is stationary, (b) when the plate is mobing at 4.5 m/s in the direction of the jet." />
+        android:text="A jet of water 50mm in diameter with a velocity of 18 m/s strikes a smooth flat plate incluned at an angle of 25 degrees to the axis of the jet. Determine the force exerted on the plate (a) when the plate is stationary, (b) when the plate is mobing at 4.5 m/s in the direction of the jet."
+        android:textSize="14sp" />
 
     <EditText
         android:id="@+id/answera"

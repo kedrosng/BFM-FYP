@@ -10,21 +10,12 @@
     android:background="@drawable/bg" >
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="20dp"
-        android:text="Surface Tension" />
-
-    <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView2"
-        android:layout_below="@+id/textView2"
         android:layout_marginTop="14dp"
         android:lineSpacingMultiplier="1.25"
-        android:textSize="18dp"
-        android:text="Surface tension is a property of liquids which is felt at the einterface between the liquid and another fluid. Surface tension has dimensions of force per unit length, and always acts parallel to the interface. Surface molecules are subject to an attractive force from nearby surface molecules so that the surface is in a state of tensio. A soap bubble is a good example to illustrate the effects of surface tension." />
+        android:text="Surface tension is a property of liquids which is felt at the einterface between the liquid and another fluid. Surface tension has dimensions of force per unit length, and always acts parallel to the interface. Surface molecules are subject to an attractive force from nearby surface molecules so that the surface is in a state of tensio. A soap bubble is a good example to illustrate the effects of surface tension."
+        android:textSize="18dp" />
 
 </RelativeLayout>

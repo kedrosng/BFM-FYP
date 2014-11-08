@@ -13,7 +13,8 @@
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Please input number to calculate the Force in X-direction and Y-Direction and also the moment induced on the Water Nozzle." />
+        android:text="Please input number to calculate the Force in X-direction and Y-Direction and also the moment induced on the Water Nozzle."
+        android:textSize="18dp" />
 
     <EditText
         android:id="@+id/inletdiameter"
@@ -104,7 +105,8 @@
         android:layout_below="@+id/disty"
         android:layout_marginLeft="29dp"
         android:layout_marginTop="72dp"
-        android:text="Flow Rate =" />
+        android:text="Flow Rate ="
+        android:textSize="18dp" />
 
     <TextView
         android:id="@+id/forcex"
@@ -113,7 +115,8 @@
         android:layout_alignLeft="@+id/fluiddensity"
         android:layout_below="@+id/flowrate"
         android:layout_marginLeft="29dp"
-        android:text="Fx =" />
+        android:text="Fx ="
+        android:textSize="18dp" />
 
     <TextView
         android:id="@+id/forcey"
@@ -122,7 +125,8 @@
         android:layout_alignLeft="@+id/fluiddensity"
         android:layout_below="@+id/forcex"
         android:layout_marginLeft="29dp"
-        android:text="Fy =" />
+        android:text="Fy ="
+        android:textSize="18dp" />
 
     <TextView
         android:id="@+id/momentoutput"
@@ -131,7 +135,8 @@
         android:layout_alignLeft="@+id/fluiddensity"
         android:layout_below="@+id/forcey"
         android:layout_marginLeft="29dp"
-        android:text="Moment = Fx * Dist-X + Fy * Dist-Y" />
+        android:text="Moment = Fx * Dist-X + Fy * Dist-Y"
+        android:textSize="18dp" />
 
     <Button
         android:id="@+id/nozzlecal"

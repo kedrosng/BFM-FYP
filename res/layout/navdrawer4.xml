@@ -15,7 +15,7 @@
         android:layout_marginRight="10dp"
         android:layout_marginTop="20dp"
         android:text="@string/impact_title"
-        android:textSize="20sp" />
+        android:textSize="14sp" />
 
     <TextView
         android:id="@+id/textView1"
@@ -24,9 +24,9 @@
         android:layout_alignLeft="@+id/impact_title"
         android:layout_below="@+id/impact_title"
         android:layout_marginTop="28dp"
-        android:textSize="17sp"
         android:lineSpacingMultiplier="1.5"
-        android:text="The momentum equation relates the sum of the forces acting on a fluid element to its acceleration or rate of change of momentum in the direction of the resultant force. This relationship is, perhaps, when taken with the conservation of mass and the energy equation, the foundation upon which all fluid flow analysis is based. In this section of application. " />
+        android:text="The momentum equation relates the sum of the forces acting on a fluid element to its acceleration or rate of change of momentum in the direction of the resultant force. This relationship is, perhaps, when taken with the conservation of mass and the energy equation, the foundation upon which all fluid flow analysis is based. In this section of application. "
+        android:textSize="14sp" />
 
     <Button
         android:id="@+id/button_waterjet"

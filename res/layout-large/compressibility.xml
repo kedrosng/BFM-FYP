@@ -10,22 +10,13 @@
     android:background="@drawable/bg" >
 
     <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="20dp"
-        android:text="Compressibility" />
-
-    <TextView
         android:id="@+id/TextView01"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView1"
-        android:layout_below="@+id/textView1"
         android:layout_marginTop="12dp"
-        android:lineSpacingMultiplier="1.25"
+        android:lineSpacingMultiplier="1.5"
         android:text="All fluid are compressible - even water - their density will change as pressure changes. Under steady conditions, and provided that the changes in pressure are small, it is usually possible to simplify analysis of the flow by assuming it is incompressible and has constant density. As you will appreciate, liquids are quite difficult to compress. In some unsteady confitions very high pressure differences can occur and it is necessary to take these into account even for liquids."
-        android:textSize="16sp" />
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/TextView02"
@@ -34,9 +25,9 @@
         android:layout_alignLeft="@+id/TextView01"
         android:layout_below="@+id/TextView01"
         android:layout_marginTop="19dp"
-        android:lineSpacingMultiplier="1.25"
+        android:lineSpacingMultiplier="1.5"
         android:text="More formally an incompressible flow is defined as one in which the density of each fluid particle remains relatively constant as it moves through the flow field. This however does not demand that the density is everywhere constant. If the density is spatially constant, then obviously the flow is incompressible, but that would be a more restrictive condition."
-        android:textSize="16sp" >
+        android:textSize="18sp" >
     </TextView>
 
 </RelativeLayout>
