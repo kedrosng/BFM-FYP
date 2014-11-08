@@ -52,7 +52,9 @@
         android:layout_above="@+id/button1"
         android:layout_alignLeft="@+id/checkBox1"
         android:text=""
-        android:focusable="false" />
+        android:focusable="false"
+        android:clickable="false"
+        />
 
     <Button
         android:id="@+id/button1"
@@ -72,6 +74,8 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/answerb"
         android:layout_toRightOf="@+id/button1"
-        android:focusable="false" />
+        android:focusable="false"
+        android:clickable="false"
+         />
 
 </RelativeLayout>

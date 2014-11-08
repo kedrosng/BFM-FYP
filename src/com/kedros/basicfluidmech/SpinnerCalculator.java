@@ -70,7 +70,7 @@ public class SpinnerCalculator extends Activity {
 
 		spinnertor.setText("The resisting Torque = " + Float.toString(T));
 
-		Toast.makeText(this, "Cal is clicked!", Toast.LENGTH_SHORT).show();
+		//Toast.makeText(this, "Cal is clicked!", Toast.LENGTH_SHORT).show();
 
 	}
 }
