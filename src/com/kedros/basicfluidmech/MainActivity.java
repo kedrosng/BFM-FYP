@@ -166,7 +166,7 @@ public class MainActivity extends FragmentActivity {
 		switch (item.getItemId()) {
 		// action with ID action_refresh was selected
 		case R.id.action_ver:
-			Toast.makeText(this, "V2.0.0", Toast.LENGTH_SHORT).show();
+			Toast.makeText(this, "V2.0.1", Toast.LENGTH_SHORT).show();
 			break;
 		// case R.id.action_exit:
 		// Intent startMain = new Intent(Intent.ACTION_MAIN);
