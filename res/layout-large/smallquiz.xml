@@ -7,7 +7,7 @@
 
     <RelativeLayout
         android:layout_width="fill_parent"
-        android:layout_height="1079dp" >
+        android:layout_height="1264dp" >
 
         <TextView
             android:id="@+id/impact_title"
@@ -16,9 +16,10 @@
             android:layout_alignParentRight="true"
             android:layout_alignParentTop="true"
             android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
             android:layout_marginTop="20dp"
             android:text="Welcome to the quiz section. Please answer the following questions and check if you are familized with the knowledge in the app."
-            android:textSize="14sp" />
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/textView1"
@@ -43,19 +44,19 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="true"
-                android:text="RadioButton" />
+                android:text="Choice 1" />
 
             <RadioButton
                 android:id="@+id/radio1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="RadioButton" />
+                android:text="Choice 2" />
 
             <RadioButton
                 android:id="@+id/radio2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="RadioButton" />
+                android:text="Choice 3" />
         </RadioGroup>
 
         <ImageView
@@ -139,7 +140,7 @@
             android:layout_alignLeft="@+id/textView5"
             android:layout_below="@+id/textView5"
             android:layout_marginTop="13dp"
-            android:text="TextView" />
+            android:text="A fluid flows through a diameter of 80 mm with velocity 5 m/s having density of 1400 Kg/m3 and having viscosity of 0.9 Kg/ms." />
 
         <EditText
             android:id="@+id/editText4"
@@ -197,6 +198,62 @@
             android:layout_alignLeft="@+id/textView10"
             android:layout_below="@+id/textView10"
             android:text="Oil, Water, Mercury, Methanol" />
+
+        <EditText
+            android:id="@+id/editText5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView11"
+            android:layout_below="@+id/textView11"
+            android:layout_marginTop="11dp"
+            android:ems="10"
+            android:hint="1" />
+
+        <EditText
+            android:id="@+id/editText6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editText5"
+            android:layout_below="@+id/editText5"
+            android:ems="10"
+            android:hint="2" />
+
+        <EditText
+            android:id="@+id/editText7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editText6"
+            android:layout_below="@+id/editText6"
+            android:ems="10"
+            android:hint="3" />
+
+        <EditText
+            android:id="@+id/editText8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editText7"
+            android:layout_below="@+id/editText7"
+            android:ems="10"
+            android:hint="4" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button1"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/textView6"
+            android:text="Your Mark is __ /100"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText8"
+            android:layout_marginTop="51dp"
+            android:layout_toRightOf="@+id/textView6"
+            android:text="Submit and Check Answers" />
 
     </RelativeLayout>
 
