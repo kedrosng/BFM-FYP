@@ -7,7 +7,7 @@
 
     <RelativeLayout
         android:layout_width="fill_parent"
-        android:layout_height="1264dp" >
+        android:layout_height="1100dp" >
 
         <TextView
             android:id="@+id/impact_title"
@@ -250,10 +250,13 @@
             android:id="@+id/button1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editText8"
             android:layout_below="@+id/editText8"
-            android:layout_marginTop="51dp"
-            android:layout_toRightOf="@+id/textView6"
-            android:text="Submit and Check Answers" />
+            android:layout_marginTop="31dp"
+            android:text="Submit and Check Answers"
+            android:clickable="true"
+            android:onClick="checkanswer"
+            android:textSize="14sp" />
 
     </RelativeLayout>
 

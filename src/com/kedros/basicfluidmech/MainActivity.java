@@ -17,6 +17,7 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.RadioButton;
 import android.widget.Toast;
 
 public class MainActivity extends FragmentActivity {
@@ -24,8 +25,7 @@ public class MainActivity extends FragmentActivity {
 	ActionBarDrawerToggle mDrawerToggle;
 
 	String[] data = { "About", "What is Fluid", "Type of Flow", "Impact Force",
-			"Quiz",
-			"Contact"
+			"Quiz", "Contact"
 
 	};
 	String[] fragments = { "com.kedros.basicfluidmech.NavDrawer1",
@@ -257,4 +257,58 @@ public class MainActivity extends FragmentActivity {
 
 	}
 
+	public void checkanswer(View view) {
+		float mark = 0;
+		float tmark = 0;
+		RadioButton btn1, btn2, btn3;
+		EditText ans1, ans2, ans3, ans4, ans5, ans6, ans7, ans8;
+		String a1,a2,a3;
+		// Q1
+		btn1 = (RadioButton) findViewById(R.id.radio0);
+		btn2 = (RadioButton) findViewById(R.id.radio2);
+		btn3 = (RadioButton) findViewById(R.id.radio1);
+		// Q2
+		ans1 = (EditText) findViewById(R.id.editText1);
+		ans2 = (EditText) findViewById(R.id.editText2);
+		ans3 = (EditText) findViewById(R.id.editText3);
+		ans4 = (EditText) findViewById(R.id.editText4);
+		ans5 = (EditText) findViewById(R.id.editText5);
+		ans6 = (EditText) findViewById(R.id.editText6);
+		ans7 = (EditText) findViewById(R.id.editText7);
+		ans8 = (EditText) findViewById(R.id.editText8);
+		a1 = ans1.getText().toString();
+		a2 = ans2.getText().toString();
+		a3 = ans3.getText().toString();
+
+		if (btn1.isChecked()) {
+			tmark = tmark + 1;
+		} else {
+			tmark = tmark + 0;
+		}
+
+		if ((a1.equals("density")) || (a1.equals("viscosity"))
+				|| a1.equals("temperature") || a1.equals("pressure")) {
+			tmark = tmark + 1;
+		} else {
+			tmark = tmark + 0;
+		}
+		if ((a2.equals("density")) || (a2.equals("viscosity"))
+				|| a2.equals("temperature") || a2.equals("pressure")) {
+			tmark = tmark + 1;
+		} else {
+			tmark = tmark + 0;
+		}
+		if ((a2.equals("density")) || (a2.equals("viscosity"))
+				|| a2.equals("temperature") || a2.equals("pressure")) {
+			tmark = tmark + 1;
+		} else {
+			tmark = tmark + 0;
+		}
+
+		// Intent intent = new Intent(this, Spinner.class);
+		// startActivity(intent);
+		Toast.makeText(this, "You Total Mark is " + Float.toString(tmark),
+				Toast.LENGTH_SHORT).show();
+
+	}
 }
