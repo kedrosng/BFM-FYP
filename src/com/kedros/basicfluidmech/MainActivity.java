@@ -166,7 +166,7 @@ public class MainActivity extends FragmentActivity {
 		switch (item.getItemId()) {
 		// action with ID action_refresh was selected
 		case R.id.action_ver:
-			Toast.makeText(this, "V2.0.1", Toast.LENGTH_SHORT).show();
+			Toast.makeText(this, "V2.1", Toast.LENGTH_SHORT).show();
 			break;
 		// case R.id.action_exit:
 		// Intent startMain = new Intent(Intent.ACTION_MAIN);
@@ -262,12 +262,19 @@ public class MainActivity extends FragmentActivity {
 		float tmark = 0;
 		RadioButton btn1, btn2, btn3;
 		EditText ans1, ans2, ans3, ans4, ans5, ans6, ans7, ans8;
-		String a1,a2,a3;
+		String a1, a2, a3, a4, a5, a6, a7, a8;
 		// Q1
 		btn1 = (RadioButton) findViewById(R.id.radio0);
 		btn2 = (RadioButton) findViewById(R.id.radio2);
 		btn3 = (RadioButton) findViewById(R.id.radio1);
-		// Q2
+
+		if (btn1.isChecked()) {
+			tmark = tmark + 1;
+		} else {
+			tmark = tmark + 0;
+		}
+
+		// Q2 （if case need to update)
 		ans1 = (EditText) findViewById(R.id.editText1);
 		ans2 = (EditText) findViewById(R.id.editText2);
 		ans3 = (EditText) findViewById(R.id.editText3);
@@ -279,27 +286,70 @@ public class MainActivity extends FragmentActivity {
 		a1 = ans1.getText().toString();
 		a2 = ans2.getText().toString();
 		a3 = ans3.getText().toString();
-
-		if (btn1.isChecked()) {
+		if ((a1.equalsIgnoreCase("density"))
+				|| (a1.equalsIgnoreCase("viscosity"))
+				|| a1.equalsIgnoreCase("temperature")
+				|| a1.equalsIgnoreCase("pressure") && !a1.equalsIgnoreCase(a2)
+				&& !a1.equalsIgnoreCase(a3)) {
+			tmark = tmark + 1;
+		} else {
+			tmark = tmark + 0;
+		}
+		if ((a2.equalsIgnoreCase("density"))
+				|| (a2.equalsIgnoreCase("viscosity"))
+				|| a2.equalsIgnoreCase("temperature")
+				|| a2.equalsIgnoreCase("pressure") && !a2.equalsIgnoreCase(a1)
+				&& !a2.equalsIgnoreCase(a3)) {
+			tmark = tmark + 1;
+		} else {
+			tmark = tmark + 0;
+		}
+		if ((a3.equalsIgnoreCase("density"))
+				|| (a3.equalsIgnoreCase("viscosity"))
+				|| a3.equalsIgnoreCase("temperature")
+				|| a3.equalsIgnoreCase("pressure") && !a3.equalsIgnoreCase(a2)
+				&& !a3.equalsIgnoreCase(a1)) {
 			tmark = tmark + 1;
 		} else {
 			tmark = tmark + 0;
 		}
 
-		if ((a1.equals("density")) || (a1.equals("viscosity"))
-				|| a1.equals("temperature") || a1.equals("pressure")) {
+		// Q3 Checking
+		a4 = ans4.getText().toString();
+		if (a4 == "10") {
 			tmark = tmark + 1;
 		} else {
 			tmark = tmark + 0;
 		}
-		if ((a2.equals("density")) || (a2.equals("viscosity"))
-				|| a2.equals("temperature") || a2.equals("pressure")) {
+
+		// Q4 Checking
+
+		// Q5 Checking
+		a5 = ans5.getText().toString();
+		a6 = ans6.getText().toString();
+		a7 = ans7.getText().toString();
+		a8 = ans8.getText().toString();
+		if ((a5.equalsIgnoreCase("water")) && !a5.equalsIgnoreCase(a6)
+				&& !a5.equalsIgnoreCase(a7) && !a5.equalsIgnoreCase(a8)) {
 			tmark = tmark + 1;
 		} else {
 			tmark = tmark + 0;
 		}
-		if ((a2.equals("density")) || (a2.equals("viscosity"))
-				|| a2.equals("temperature") || a2.equals("pressure")) {
+
+		if ((a6.equalsIgnoreCase("methanol")) && !a6.equalsIgnoreCase(a5)
+				&& !a6.equalsIgnoreCase(a7) && !a6.equalsIgnoreCase(a8)) {
+			tmark = tmark + 1;
+		} else {
+			tmark = tmark + 0;
+		}
+		if ((a7.equalsIgnoreCase("oil")) && !a7.equalsIgnoreCase(a6)
+				&& !a7.equalsIgnoreCase(a5) && !a7.equalsIgnoreCase(a8)) {
+			tmark = tmark + 1;
+		} else {
+			tmark = tmark + 0;
+		}
+		if ((a8.equalsIgnoreCase("mercury")) && !a8.equalsIgnoreCase(a6)
+				&& !a8.equalsIgnoreCase(a7) && !a8.equalsIgnoreCase(a5)) {
 			tmark = tmark + 1;
 		} else {
 			tmark = tmark + 0;
