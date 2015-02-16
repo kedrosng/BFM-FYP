@@ -131,7 +131,7 @@
             android:layout_alignLeft="@+id/textView4"
             android:layout_below="@+id/textView4"
             android:layout_marginTop="14dp"
-            android:text="Calculate Reynold's Number with the given parameters." />
+            android:text="Calculate Reynold&apos;s Number with the given parameters." />
 
         <TextView
             android:id="@+id/textView6"
@@ -173,23 +173,13 @@
             android:text="Choose the water jet with the largest impact force." />
 
         <TextView
-            android:id="@+id/textView9"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/textView8"
-            android:layout_below="@+id/textView8"
-            android:layout_marginTop="41dp"
-            android:text="Question 5"
-            android:textSize="18sp" />
-
-        <TextView
             android:id="@+id/textView10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/textView9"
             android:layout_below="@+id/textView9"
             android:layout_marginTop="10dp"
-            android:text="Put the following liquid's viscosity in increasing order:" />
+            android:text="Put the following liquid&apos;s viscosity in increasing order:" />
 
         <TextView
             android:id="@+id/textView11"
@@ -236,16 +226,7 @@
             android:ems="10"
             android:hint="4" />
 
-        <TextView
-            android:id="@+id/textView12"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/button1"
-            android:layout_marginTop="15dp"
-            android:layout_toRightOf="@+id/textView6"
-            android:text="Your Mark is __ /100"
-            android:textAppearance="?android:attr/textAppearanceLarge" />
-
+        
         <Button
             android:id="@+id/button1"
             android:layout_width="wrap_content"
@@ -253,10 +234,46 @@
             android:layout_alignLeft="@+id/editText8"
             android:layout_below="@+id/editText8"
             android:layout_marginTop="31dp"
-            android:text="Submit and Check Answers"
             android:clickable="true"
             android:onClick="checkanswer"
+            android:text="Submit and Check Answers"
             android:textSize="14sp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/imageView1"
+            android:layout_below="@+id/textView8" >
+
+            <RadioButton
+                android:id="@+id/radio3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="m = 10" />
+
+            <RadioButton
+                android:id="@+id/radio4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="m = 8 " />
+
+            <RadioButton
+                android:id="@+id/radio5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="m = 20" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView8"
+            android:layout_below="@+id/radioGroup2"
+            android:text="Question 5"
+            android:textSize="18sp" />
 
     </RelativeLayout>
 

@@ -166,7 +166,7 @@ public class MainActivity extends FragmentActivity {
 		switch (item.getItemId()) {
 		// action with ID action_refresh was selected
 		case R.id.action_ver:
-			Toast.makeText(this, "V2.1", Toast.LENGTH_SHORT).show();
+			Toast.makeText(this, "V3.0", Toast.LENGTH_SHORT).show();
 			break;
 		// case R.id.action_exit:
 		// Intent startMain = new Intent(Intent.ACTION_MAIN);
@@ -260,7 +260,7 @@ public class MainActivity extends FragmentActivity {
 	public void checkanswer(View view) {
 		float mark = 0;
 		float tmark = 0;
-		RadioButton btn1, btn2, btn3;
+		RadioButton btn1, btn2, btn3, btn4, btn5, btn6;
 		EditText ans1, ans2, ans3, ans4, ans5, ans6, ans7, ans8;
 		String a1, a2, a3, a4, a5, a6, a7, a8;
 		// Q1
@@ -323,7 +323,15 @@ public class MainActivity extends FragmentActivity {
 		}
 
 		// Q4 Checking
+		btn4 = (RadioButton) findViewById(R.id.radio3);
+		btn5 = (RadioButton) findViewById(R.id.radio4);
+		btn6 = (RadioButton) findViewById(R.id.radio5);
 
+		if (btn5.isChecked()) {
+			tmark = tmark + 1;
+		} else {
+			tmark = tmark + 0;
+		}
 		// Q5 Checking
 		a5 = ans5.getText().toString();
 		a6 = ans6.getText().toString();
@@ -354,11 +362,37 @@ public class MainActivity extends FragmentActivity {
 		} else {
 			tmark = tmark + 0;
 		}
-
+		mark = tmark * 10;
+		int m = Math.round(mark);
 		// Intent intent = new Intent(this, Spinner.class);
 		// startActivity(intent);
-		Toast.makeText(this, "You Total Mark is " + Float.toString(tmark),
-				Toast.LENGTH_SHORT).show();
+		switch (m) {
+		case 100:
+		case 90:
+		case 80:
+			Toast.makeText(this, "You Total Mark is " + Integer.toString(m) + " out of 100. Well Done!",
+					Toast.LENGTH_SHORT).show();
+			break;
+		
+		case 70:
+		case 60:
+		case 50:
+			Toast.makeText(this, "You Total Mark is " + Integer.toString(m) + " out of 100. You need to work harder!",
+					Toast.LENGTH_SHORT).show();
+			break;
+		case 40:
+		case 30:
+		case 20:
+		case 10:
+		case 0:
+			Toast.makeText(this, "You Total Mark is " + Integer.toString(m) + " out of 100. Study Again!",
+					Toast.LENGTH_SHORT).show();
+			break;
+		}
+		
+		
+		//Toast.makeText(this, "You Total Mark is " + Float.toString(mark) + "Out of 100",
+			//	Toast.LENGTH_SHORT).show();
 
 	}
 }
