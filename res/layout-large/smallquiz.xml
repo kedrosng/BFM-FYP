@@ -28,7 +28,7 @@
             android:layout_alignLeft="@+id/impact_title"
             android:layout_below="@+id/impact_title"
             android:layout_marginTop="21dp"
-            android:text="Question 1"
+            android:text="Question 1 - Which is the correct description of the following image?"
             android:textSize="18sp" />
 
         <RadioGroup
@@ -44,19 +44,19 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="true"
-                android:text="Choice 1" />
+                android:text="Uniform Flow" />
 
             <RadioButton
                 android:id="@+id/radio1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Choice 2" />
+                android:text="Non-Uniform Flow" />
 
             <RadioButton
                 android:id="@+id/radio2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Choice 3" />
+                android:text="I have no idea" />
         </RadioGroup>
 
         <ImageView
@@ -170,7 +170,7 @@
             android:layout_alignLeft="@+id/textView7"
             android:layout_below="@+id/textView7"
             android:layout_marginTop="12dp"
-            android:text="Choose the water jet with the largest impact force." />
+            android:text="Choose the water jet with the largest impact force with the same density." />
 
         <TextView
             android:id="@+id/textView10"
@@ -251,19 +251,19 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="true"
-                android:text="m = 10" />
+                android:text="Small Velocity, Large Area" />
 
             <RadioButton
                 android:id="@+id/radio4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="m = 8 " />
+                android:text="Small Area, Large Velocity " />
 
             <RadioButton
                 android:id="@+id/radio5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="m = 20" />
+                android:text="I don't Know" />
         </RadioGroup>
 
         <TextView
